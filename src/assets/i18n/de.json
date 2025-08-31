@@ -1,41 +1,41 @@
 {
   "NAV": {
-    "ABOUTME": "Über mich",
+    "ABOUTME": "Warum ich?",
     "SKILLS": "Fähigkeiten",
     "PROJECTS": "Projekte",
     "CONTACT": "Kontakt"
   },
   "INTRO": {
     "NAME": "Marcel Reyes L.",
-    "JOBTITLE": "Frontend-Entwickler"
+    "JOBTITLE": "Frontend Developer"
   },
   "ABOUTME": {
-    "NAME": "Über mich",
+    "NAME": "Warum ich?",
     "FIRSTANIMATION": {
       "FIRSTPART": "Ich komme",
-      "SECONDPART": "aus NRW",
+      "SECONDPART": "aus Beckum",
       "THIRDPART": "..|"
     },
     "SECONDANIMATION": {
-      "FIRSTPART": "Ich suche",
-      "SECONDPART": "spannende neue Herausforderungen",
+      "FIRSTPART": "Ich bin",
+      "SECONDPART": "offen für neue Herausforderungen",
       "THIRDPART": "..|"
     },
     "THIRDANIMATION": {
       "FIRSTPART": "Ich bin",
-      "SECONDPART": "flexibel für Projekteinsätze",
+      "SECONDPART": "bereit für Dienstreisen",
       "THIRDPART": "..|"
     },
-    "DESCRIPTION": "Ich bin ein begeisterter Frontend-Entwickler mit Fokus auf moderne, nutzerfreundliche und responsive Weblösungen. Technologieaffin und lernbereit, baue ich mein Wissen kontinuierlich aus.",
-    "LETSTALK": "Let's talk!"
+    "DESCRIPTION": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Fokus auf nutzerfreundliche, responsive Webanwendungen. Mit Begeisterung für moderne Technologien erweitere ich stetig meine Fähigkeiten.",
+    "LETSTALK": "Lass uns reden!"
   },
   "SKILLS": {
-    "TITLE": "Meine Fähigkeiten",
+    "TITLE": "Meine Skills",
     "FRONTEND": ["HTML", "CSS", "JavaScript", "Angular"],
     "BACKEND": ["Node.js", "Express", "MongoDB"],
     "TOOLS": ["Git", "VS Code", "Figma"],
-    "LEARNINGNOW": "Momentan vertiefe ich:",
-    "LEARNINGNEXT": "Ich habe Freude daran, neue Technologien auszuprobieren, kreative Lösungen zu finden und mich ständig weiterzuentwickeln – genau das macht diesen Beruf für mich spannend."
+    "LEARNINGNOW": "Ich lerne gerade:",
+    "LEARNINGNEXT": "Ich liebe es, neue Technologien zu entdecken, Lösungen zu entwickeln und mich ständig weiterzuentwickeln – genau das macht diesen Beruf für mich spannend."
   },
   "PROJECTS": {
     "RESPONSIVE": {
@@ -55,15 +55,15 @@
       "DURATION": "Dauer: 4 Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
-          "HEADLINE": "Projektbeschreibung",
+          "HEADLINE": "Über dieses Projekt",
           "TEXT": "Join ist ein webbasiertes Kanban-Board, das ich im Team umgesetzt habe. Es ermöglicht Aufgabenverwaltung, Priorisierung und effiziente Teamarbeit – inspiriert von Tools wie Trello."
         },
         "DESCRIPTIONTWO": {
-          "HEADLINE": "Mein Workflow",
+          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
           "TEXT": "Ich habe die Arbeit in Planung, Umsetzung und Testing aufgeteilt. Mit Kanban-Listen, Git-Workflows und regelmäßigen Reviews konnte ich auch in stressigen Phasen strukturiert arbeiten."
         },
         "DESCRIPTIONTHREE": {
-          "HEADLINE": "Erfahrungen",
+          "HEADLINE": "Neue Erfahrungen durch Angular",
           "TEXT": "Die Teamarbeit war sehr wertvoll. Ich habe gelernt, Verantwortung zu übernehmen, klar zu kommunizieren und flexibel auf Herausforderungen zu reagieren – sowohl technisch als auch organisatorisch."
         }
       },
@@ -76,21 +76,21 @@
       "SKILLTHREEENAME": "Scrum"
     },
     "PROJECTTWO": {
-      "TITLE": "2. 2D Spiel",
+      "TITLE": "2. 2D Game Engine",
       "TITLEWO": "2D Spiel-Engine",
       "DURATION": "Dauer: 3 Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
-          "HEADLINE": "Projektbeschreibung",
-          "TEXT": "Dieses Spiel entstand mit HTML5 Canvas und JavaScript und legt besonderen Wert auf Animationen und sauberes Gameplay."
+          "HEADLINE": "Über dieses Projekt",
+          "TEXT": "Diese Spielanwendung entstand mit HTML5 Canvas und Vanilla JavaScript und legt besonderen Fokus auf die technische Umsetzung von Animationen und präzisen Spielmechaniken."
         },
         "DESCRIPTIONTWO": {
-          "HEADLINE": "Umsetzung",
-          "TEXT": "Mein 2D-Game bietet ein dynamisches Spielerlebnis mit Bosskämpfen, Animationen und einer soliden Levelstruktur."
+          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
+          "TEXT": "Mein 2D-Spiel mit HTML5 Canvas und Vanilla JavaScript bietet ein dynamisches Spielerlebnis mit spannenden Bosskämpfen, detailreichen Animationen und einer durchdachten Levelstruktur."
         },
         "DESCRIPTIONTHREE": {
-          "HEADLINE": "Meine Learnings",
-          "TEXT": "Das Projekt hat mir viele Einblicke gegeben und gezeigt, welche Möglichkeiten HTML, CSS und JavaScript in der Webentwicklung bieten."
+          "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
+          "TEXT": "Durch das Projekt habe ich umfangreiche Erfahrungen gesammelt und erkannt, welche vielseitigen Möglichkeiten JavaScript, HTML und CSS in der Webentwicklung bieten."
         }
       },
       "SKILLHEADLINE": "Technologien",
@@ -102,21 +102,21 @@
       "SKILLTHREEENAME": "CSS"
     },
     "PROJECTTHREE": {
-      "TITLE": "Demnächst verfügbar",
-      "TITLEWO": "Demnächst verfügbar",
+      "TITLE": "Bald verfügbar",
+      "TITLEWO": "Bald verfügbar",
       "DURATION": "Dauer: X Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
-          "HEADLINE": "Projektbeschreibung",
-          "TEXT": "Ein neues Projekt ist in Arbeit. Bleib gespannt – es wird sich lohnen!"
+          "HEADLINE": "Über dieses Projekt",
+          "TEXT": "Wir arbeiten aktuell mit Hochdruck an unserem neuen Projekt. Bleib dran – es lohnt sich!"
         },
         "DESCRIPTIONTWO": {
-          "HEADLINE": "Info",
-          "TEXT": "Trage dich in unseren Newsletter ein, um den Start nicht zu verpassen."
+          "HEADLINE": "Info-Bereich",
+          "TEXT": "Trage dich gerne in unseren Newsletter ein, um den Start nicht zu verpassen."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "Danke",
-          "TEXT": "Danke für dein Interesse und deine Geduld."
+          "TEXT": "Vielen Dank für deine Geduld und dein Interesse."
         }
       },
       "SKILLHEADLINE": "Technologien",
@@ -128,21 +128,21 @@
       "SKILLTHREEENAME": "Scrum"
     },
     "PROJECTFOUR": {
-      "TITLE": "Bald online",
-      "TITLEWO": "Bald online",
+      "TITLE": "In Kürze online",
+      "TITLEWO": "In Kürze online",
       "DURATION": "Dauer: X Wochen",
       "DESCRIPTIONS": {
         "DESCRIPTIONONE": {
-          "HEADLINE": "Projektbeschreibung",
-          "TEXT": "Wir arbeiten an den letzten Details, um bald live zu gehen."
+          "HEADLINE": "Über dieses Projekt",
+          "TEXT": "Wir feilen an den letzten Details, um dir bald ein großartiges Erlebnis bieten zu können."
         },
         "DESCRIPTIONTWO": {
-          "HEADLINE": "Arbeitsweise",
-          "TEXT": "Besuche uns bald wieder oder abonniere den Newsletter, um informiert zu bleiben."
+          "HEADLINE": "Wie ich meinen Arbeitsprozess organisiert habe",
+          "TEXT": "Schau bald wieder vorbei oder abonniere den Newsletter, um auf dem Laufenden zu bleiben."
         },
         "DESCRIPTIONTHREE": {
-          "HEADLINE": "Meine Erfahrung",
-          "TEXT": "Ich freue mich, bald mehr zeigen zu können!"
+          "HEADLINE": "Meine Erfahrung mit Gruppenarbeit",
+          "TEXT": "Ich freue mich darauf, bald mehr zeigen zu können!"
         }
       },
       "SKILLHEADLINE": "Technologien",
@@ -156,14 +156,14 @@
   },
   "CONTACT": {
     "TITLE": "Kontakt",
-    "DESCRIPTION": "Ich freue mich darauf, spannende Projekte aktiv mitzugestalten. Melde dich gerne, wenn du Unterstützung in der Webentwicklung brauchst oder Ideen gemeinsam umsetzen willst!",
+    "DESCRIPTION": "Ich freue mich darauf, spannende Projekte aktiv mitzugestalten. Kontaktiere mich gerne, wenn du engagierte Unterstützung in der Webentwicklung oder bei innovativen Ideen suchst!",
     "LETSTALK": "Lass uns zusammenarbeiten!",
     "NAME": "Dein Name",
     "EMAIL": "Deine E-Mail",
     "MESSAGE": "Deine Nachricht",
     "PRIVACY_PART1": "Ich habe die",
-    "PRIVACY_PART2": "Rechtlichen Hinweise",
-    "PRIVACY_PART3": "gelesen und stimme der Datenverarbeitung zu.",
+    "PRIVACY_PART2": "Rechtliche Hinweise",
+    "PRIVACY_PART3": "gelesen und willige in die Verarbeitung meiner Daten ein.",
     "SEND": "Absenden",
     "ERROR_NAME_REQUIRED": "Bitte gib deinen Namen ein.",
     "ERROR_NAME_MINLENGTH": "Dein Name muss mindestens 3 Zeichen lang sein.",
@@ -171,7 +171,7 @@
     "ERROR_EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein.",
     "ERROR_MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein.",
     "ERROR_MESSAGE_MINLENGTH": "Mindestens 25 Zeichen nötig.",
-    "ERROR_MESSAGE_MAXLENGTH": "Maximal 500 Zeichen möglich.",
+    "ERROR_MESSAGE_MAXLENGTH": "Maximal 500 Zeichen nötig.",
     "ERROR_PRIVACY": "Bitte bestätige die rechtlichen Hinweise.",
     "SUCCESS": "Danke für deine Nachricht!",
     "ERROR": "Senden fehlgeschlagen. Bitte später erneut versuchen."
@@ -185,38 +185,38 @@
   },
   "PRIVACY": {
     "TITLE": "Rechtliche Hinweise",
-    "LAST_UPDATED": "Stand: September 2025",
+    "LAST_UPDATED": "Letzte Aktualisierung: September 2025",
     "SECTIONS": {
       "RESPONSIBLE": "Verantwortlicher",
       "DATA_COLLECTION": "Datenerhebung",
       "CONTACT_FORM": "Kontaktformular",
-      "LOG_FILES": "Server-Logs",
-      "RIGHTS": "Deine Rechte",
-      "REVOCATION": "Widerruf",
-      "SECURITY": "Sicherheit",
+      "LOG_FILES": "Server-Log-Dateien",
+      "RIGHTS": "Ihre Rechte",
+      "REVOCATION": "Widerruf der Einwilligung",
+      "SECURITY": "Verschlüsselung / Sicherheit",
       "HOSTING": "Hosting"
     },
-    "DATA_COLLECTION_TEXT_1": "Beim Besuch dieser Website werden keine persönlichen Daten gespeichert oder ausgewertet. Es werden weder Cookies gesetzt noch Tracking betrieben.",
-    "CONTACT_FORM_TEXT_1": "Daten aus dem Kontaktformular (z. B. Name, E-Mail, Nachricht) werden ausschließlich zur Bearbeitung deiner Anfrage genutzt.",
+    "DATA_COLLECTION_TEXT_1": "Beim Besuch dieser Website werden keine personenbezogenen Daten automatisch gespeichert oder analysiert. Es werden keine Cookies verwendet und kein Tracking durchgeführt.",
+    "CONTACT_FORM_TEXT_1": "Wenn du mich über das Kontaktformular kontaktierst, werden die dort eingegebenen Daten (z. B. Name, E-Mail-Adresse, Nachricht) ausschließlich zur Bearbeitung deiner Anfrage verwendet.",
     "CONTACT_FORM_TEXT_2": "Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).",
-    "CONTACT_FORM_TEXT_3": "Die Daten werden nicht weitergegeben und nach Abschluss der Bearbeitung gelöscht.",
-    "LOG_FILES_TEXT_1": "Der Server speichert bei jedem Zugriff automatisch technische Angaben:",
+    "CONTACT_FORM_TEXT_3": "Die Daten werden nicht an Dritte weitergegeben und nach Abschluss der Bearbeitung gelöscht.",
+    "LOG_FILES_TEXT_1": "Der Webserver speichert bei jeder Anfrage automatisch technische Daten:",
     "LOG_FILES_IP": "IP-Adresse",
     "LOG_FILES_DATE": "Datum und Uhrzeit",
-    "LOG_FILES_BROWSER": "Browser",
+    "LOG_FILES_BROWSER": "Browsertyp/-version",
     "LOG_FILES_OS": "Betriebssystem",
-    "LOG_FILES_TEXT_2": "Diese Logs dienen ausschließlich zur Fehleranalyse und werden nicht mit anderen Daten verknüpft.",
-    "RIGHTS_INTRO": "Du hast folgende Rechte gemäß DSGVO:",
-    "RIGHTS_ACCESS": "Auskunft über gespeicherte Daten (Art. 15 DSGVO)",
-    "RIGHTS_CORRECTION": "Korrektur falscher Daten (Art. 16 DSGVO)",
-    "RIGHTS_DELETION": "Löschung deiner Daten (Art. 17 DSGVO)",
+    "LOG_FILES_TEXT_2": "Diese Logs dienen ausschließlich der Fehleranalyse und werden nicht mit anderen Daten zusammengeführt. Eine personenbezogene Auswertung findet nicht statt.",
+    "RIGHTS_INTRO": "Sie haben folgende Rechte gemäß DSGVO:",
+    "RIGHTS_ACCESS": "Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)",
+    "RIGHTS_CORRECTION": "Berichtigung unrichtiger Daten (Art. 16 DSGVO)",
+    "RIGHTS_DELETION": "Löschung Ihrer Daten (Art. 17 DSGVO)",
     "RIGHTS_LIMITATION": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
-    "RIGHTS_OBJECTION": "Widerspruch gegen Verarbeitung (Art. 21 DSGVO)",
+    "RIGHTS_OBJECTION": "Widerspruch gegen die Datenverarbeitung (Art. 21 DSGVO)",
     "RIGHTS_TRANSFER": "Datenübertragbarkeit (Art. 20 DSGVO)",
-    "RIGHTS_CONTACT": "Wende dich zur Ausübung deiner Rechte an:",
-    "REVOCATION_TEXT": "Du kannst deine Einwilligung jederzeit widerrufen. Schicke dazu eine E-Mail an",
-    "SECURITY_TEXT": "Diese Website nutzt HTTPS-Verschlüsselung. Übermittelte Daten werden sicher übertragen.",
-    "HOSTING_TEXT": "Die Website wird auf einem privaten Server in Deutschland gehostet und ausschließlich von Marcel Reyes Langenhorst betreut.",
+    "RIGHTS_CONTACT": "Zur Ausübung Ihrer Rechte wenden Sie sich bitte an:",
+    "REVOCATION_TEXT": "Sie können Ihre Einwilligung jederzeit widerrufen. Senden Sie dazu eine E-Mail an",
+    "SECURITY_TEXT": "Diese Website nutzt HTTPS-Verschlüsselung. Ihre Daten werden beim Absenden des Kontaktformulars sicher übertragen.",
+    "HOSTING_TEXT": "Die Website wird auf einem privaten Server in Deutschland gehostet und ausschließlich von Marcel Reyes Langenhorst verwaltet.",
     "BACK": "Zurück zur Startseite"
   },
   "LEGAL": {
