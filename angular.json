@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Portfolio": {
+    "portfolio-marcel": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Portfolio:build:production"
+              "buildTarget": "portfolio-marcel:build:production"
             },
             "development": {
-              "buildTarget": "Portfolio:build:development"
+              "buildTarget": "portfolio-marcel:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Portfolio:build"
+            "buildTarget": "portfolio-marcel:build"
           }
         },
         "test": {
