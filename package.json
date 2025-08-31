@@ -1,6 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-marcel",
   "version": "0.0.0",
+  "description": "Personal portfolio of Marcel Reyes Langenhorst built with Angular 17",
+  "author": "Marcel Reyes Langenhorst",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
