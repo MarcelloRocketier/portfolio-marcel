@@ -1,0 +1,77 @@
+@import "../../../styles/mixins";
+
+.aboutMeMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  padding-top: 80px;
+  background-color: rgb(38, 46, 52);
+
+  h1 {
+    font-family: Anta;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    text-align: center;
+    color: rgb(137, 188, 255);
+    padding-bottom: 40px;
+  }
+  .locationContainer {
+    width: 1100px;
+    height: 176px;
+    gap: 80px;
+    @include displayFlex;
+    .typingBox {
+      width: 500px;
+      height: 57px;
+      font-family: Josefin Sans;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+      @include displayFlex;
+      img {
+        width: 75px;
+        height: 75px;
+        margin-right: 5px;
+      }
+    }
+    .descriptionContainer {
+      @include displayFlex;
+      flex-direction: column;
+      width: 379px;
+      height: 176px;
+      gap: 24px;
+      .description {
+        @include displayFlex;
+        color: rgb(248, 245, 236);
+        width: 379px;
+        height: 176px;
+        font-family: Josefin Sans;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+      }
+      .descriptionButton {
+        align-self: flex-end;
+        margin-top: auto;
+        width: 160px;
+        height: 48px;
+        border-radius: 30px;
+        border-width: 1px;
+        border-color: rgba(137, 188, 217, 1);
+        padding-top: 13px;
+        padding-right: 30px;
+        padding-bottom: 13px;
+        padding-left: 30px;
+        color: rgba(137, 188, 217, 1);
+        background-color: transparent;
+      }
+      .descriptionButton:hover {
+        background-color: rgb(63,70,74);
+      }
+    }
+  }
+}
+@import "aboutme.component.media-queries";

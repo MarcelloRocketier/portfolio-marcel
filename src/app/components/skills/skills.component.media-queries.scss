@@ -1,0 +1,173 @@
+@media (max-width: 850px) {
+  .skillsSection {
+    .skillsSorting {
+      flex-direction: column;
+      gap: 40px;
+
+      .skillsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        max-width: 400px;
+        margin: 0 auto;
+        justify-items: center;
+      }
+
+      .skillCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .skillImage {
+          width: 64px;
+          height: 64px;
+          object-fit: contain;
+        }
+      }
+
+      .skillName {
+        margin-top: 0.5rem;
+        font-size: 14px;
+        color: white;
+      }
+    }
+  }
+  .responsiveLearningNow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    white-space: normal;
+    line-height: 1.4;
+    font-size: 16px;
+    color: rgba(137, 188, 217, 1);
+  }
+
+  .skillsLearning {
+    max-width: 400px;
+    min-height: 0;
+    flex-direction: row-reverse;
+    .shapeWrapperSkills {
+      display: none;
+    }
+    .responsiveShape {
+      display: block;
+    }
+    .learningNow {
+      display: none;
+    }
+    .learningNext {
+      font-family: Josefin Sans;
+      font-weight: 400;
+      white-space: normal;
+      line-height: 1.4;
+      font-size: 16px;
+      max-width: 300px;
+      margin-right: 35px;
+      text-align: left;
+    }
+  }
+
+  .responsiveButtonContainer {
+    display: flex;
+    justify-content: center;
+    .responsiveButton {
+      font-family: Josefin Sans;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      width: 200px;
+      height: 43px;
+      border-radius: 30px;
+      padding-top: 13px;
+      padding-right: 30px;
+      padding-bottom: 13px;
+      padding-left: 30px;
+      background-color: rgba(137, 188, 217, 1);
+      color: rgba(38, 46, 52, 1);
+    }
+  }
+}
+
+.responsiveShape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.learningIcons {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 1.5rem;
+  margin-right: 5px;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .skillsSection {
+    .skillsTitle {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .learningIcons {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .learningIcons {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .learningIcons {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .learningIcons {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 371px) {
+  .learningIcons {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 355px) {
+  .learningIcons {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 330px) {
+  .learningIcons {
+    margin-bottom: 120px;
+  }
+}

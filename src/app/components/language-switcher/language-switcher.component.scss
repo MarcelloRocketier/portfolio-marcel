@@ -1,0 +1,53 @@
+.language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  height: 36px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #262e34;
+    transition: color 0.3s ease;
+
+    &.active {
+      color: #262e34;
+    }
+
+    &:hover {
+      color: #f8f5ec;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 70%;
+    background-image: url("../../../assets/img/otherSpecs/navbarEllipse.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    z-index: 1;
+    left: 0;
+    transition: left 0.3s ease;
+  }
+
+  &.de::before {
+    left: 50%;
+  }
+}
+
+@import "./language-switcher.component.media-queries.scss";

@@ -1,0 +1,64 @@
+<footer>
+  <section class="footerWrapper mainFooter">
+    <nav>
+      <a class="privacy" [routerLink]="'/privacy-policy'" routerLinkActive="active">
+        {{ 'FOOTER.PRIVACY' | translate }}
+      </a>
+      <p>{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
+    </nav>
+    <a href="https://marcel-reyes-langen.developerakademie.net/index.html" target="_blank" rel="noopener noreferrer" class="logo">
+       <img src="./assets/img/logo/LogoIconBlack.svg" alt="Marcel Reyes Logo" />
+    </a>
+    <div class="socials">
+      <a href="mailto:marcelreyeslangenhorst@gmail.com.contact?subject=Kontakt%20über%20Portfolio&body=Hallo%20Marcel%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
+        (mouseenter)="isHoveredMail = true" (mouseleave)="isHoveredMail = false">
+        <img
+          [src]="isHoveredMail ? 'assets/img/otherSpecs/EmailFooterWhite.svg' : 'assets/img/otherSpecs/EmailFooter.svg'"
+          width="30" height="30" alt="Mail Logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/marcel-reyes-langenhorst-56b3022a7/" target="_blank" rel="noopener noreferrer"
+        (mouseenter)="isHoveredLinkedin = true" (mouseleave)="isHoveredLinkedin = false">
+        <img
+          [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/LinkedinFooterWhite.svg' : 'assets/img/otherSpecs/LinkedinFooter.svg'"
+          width="30" height="30" alt="LinkedIn Logo" />
+      </a> 
+      <a href="https://github.com/MarcelloRocketier" target="_blank" rel="noopener noreferrer"
+        (mouseenter)="isHoveredGitHub = true" (mouseleave)="isHoveredGitHub = false">
+        <img
+          [src]="isHoveredGitHub ? 'assets/img/otherSpecs/GitHubFooterWhite.svg' : 'assets/img/otherSpecs/GithubFooter.svg'"
+          width="30" height="30" alt="GitHub Logo" />
+      </a>
+    </div>
+  </section>
+  <section class="responsiveFooterWrapper responsiveFooter"> 
+    <a href="https://marcel-reyes-langen.developerakademie.net/index.html" target="_blank" rel="noopener noreferrer" class="logo">
+      <img src="assets/img/logo/LogoFooter.svg" alt="">
+    </a>
+    <div class="socials">
+      <a href="mailto:marcelreyeslangenhorst@gmail.com.contact?subject=Kontakt%20über%20Portfolio&body=Hallo%20Marcel%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
+        (mouseenter)="isHoveredMail = true" (mouseleave)="isHoveredMail = false">
+        <img
+          [src]="isHoveredMail ? 'assets/img/otherSpecs/EmailFooterWhite.svg' : 'assets/img/otherSpecs/EmailFooter.svg'"
+          width="30" height="30" alt="Mail Logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/marcel-reyes-langenhorst-56b3022a7/" target="_blank" rel="noopener noreferrer"
+        (mouseenter)="isHoveredLinkedin = true" (mouseleave)="isHoveredLinkedin = false">
+        <img
+          [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/LinkedinFooterWhite.svg' : 'assets/img/otherSpecs/LinkedinFooter.svg'"
+          width="30" height="30" alt="LinkedIn Logo" />
+      </a>
+      <a href="https://github.com/MarcelloRocketier/" target="_blank" rel="noopener noreferrer"
+        (mouseenter)="isHoveredGitHub = true" (mouseleave)="isHoveredGitHub = false">
+        <img
+          [src]="isHoveredGitHub ? 'assets/img/otherSpecs/GitHubFooterWhite.svg' : 'assets/img/otherSpecs/GithubFooter.svg'"
+          width="30" height="30" alt="GitHub Logo" />
+      </a>
+    </div>
+    <nav class="responsiveNav">
+      <a class="privacy" [routerLink]="'/privacy-policy'" routerLinkActive="active">
+        {{ 'FOOTER.PRIVACY' | translate }}
+      </a>
+      <p class="copyright">{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
+    </nav>
+  </section>
+</footer>

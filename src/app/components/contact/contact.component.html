@@ -1,0 +1,106 @@
+<section class="contactsSection" id="contact-desktop">
+  <div class="contactsWrapper">
+    <div class="contactsTitleWrapper">
+      <h2 id="contact-mobile" class="contactsTitle">{{ 'CONTACT.TITLE' | translate }}</h2>
+      <button class="scrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
+    </div>
+    <div class="contentUp">
+      <div class="contactDescriptionContainer">
+        <p class="contactDescription"> {{ 'CONTACT.DESCRIPTION' | translate }} </p>
+        <div class="contactInfo">
+          <div class="contactEmail">
+            <span class="iconEmail"></span>
+            Mail: <a href="mailto:marcelreyeslangenhorst@gmail.com">marcelreyeslangenhorst&#64;gmail.com</a>
+          </div>
+          <div class="contactPhone">
+            <span class="iconPhone"></span>
+            Tel: <a href="tel:+4917662529651">0176 / 62529651</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contentMiddle">
+      <p>{{ 'CONTACT.LETSTALK' | translate }}</p>
+    </div>
+    <div class="contentDown">
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contactForm">
+        <div class="nameAndEmail">
+          <label class="name" [class.label-error]="nameInput.invalid && nameInput.touched">
+            {{
+            nameInput.invalid && nameInput.errors?.['minlength']
+            ? ('CONTACT.ERROR_NAME_MINLENGTH' | translate)
+            : nameInput.invalid && nameInput.errors?.['required']
+            ? ('CONTACT.ERROR_NAME_REQUIRED' | translate)
+            : ('CONTACT.NAME' | translate)
+            }}
+            <input type="text" class="nameInput" name="name" [(ngModel)]="name" minlength="3" required
+              #nameInput="ngModel" [class.invalid]="nameInput.invalid && nameInput.touched" />
+          </label>
+          <label class="email" [class.label-error]="emailInput.invalid && emailInput.touched">
+            {{
+            emailInput.invalid && emailInput.errors?.['pattern']
+            ? ('CONTACT.ERROR_EMAIL_INVALID' | translate)
+            : emailInput.invalid && emailInput.errors?.['required']
+            ? ('CONTACT.ERROR_EMAIL_REQUIRED' | translate)
+            : ('CONTACT.EMAIL' | translate)
+            }}
+            <input type="email" class="emailInput" name="email" [(ngModel)]="email" required
+              pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" #emailInput="ngModel"
+              [class.invalid]="emailInput.invalid && emailInput.touched" />
+          </label>
+        </div>
+        <div>
+          <label class="message" [class.label-error]="
+    (messageInput.errors?.['minlength'] && messageInput.touched) ||
+    (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))
+  ">
+            {{
+            messageInput.errors?.['minlength']
+            ? ('CONTACT.ERROR_MESSAGE_MINLENGTH' | translate)
+            : messageInput.errors?.['required']
+            ? ('CONTACT.ERROR_MESSAGE_REQUIRED' | translate)
+            : ('CONTACT.MESSAGE' | translate)
+            }}
+            <textarea [(ngModel)]="message" #messageInput="ngModel" class="messageInput" name="message" minlength="25"
+              maxlength="250" rows="4" required [class.invalid]="
+      (messageInput.errors?.['minlength'] && messageInput.touched) ||
+      (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))
+    ">
+  </textarea>
+          </label>
+          <label class="privacyContainer" [class.label-error]="privacy.invalid && privacy.touched">
+            <input type="checkbox" name="privacyAccepted" class="privacyCheckbox" [(ngModel)]="privacyAccepted" required
+              #privacy="ngModel" />
+            <span class="customCheckbox"></span>
+            <p class="privacyText">
+              {{ 'CONTACT.PRIVACY_PART1' | translate }}
+              <a class="privacyText" [routerLink]="'/privacy-policy'" routerLinkActive="active">
+                {{ 'CONTACT.PRIVACY_PART2' | translate }}
+              </a>
+              {{ 'CONTACT.PRIVACY_PART3' | translate }}
+            </p>
+          </label>
+          <div class="error">
+            <span *ngIf="privacy.invalid && privacy.dirty">
+              {{ 'CONTACT.ERROR_PRIVACY' | translate }}
+            </span>
+          </div>
+        </div>
+        <div class="sendButtonContainer">
+          <button type="submit" class="sendButton" [class.activeSendButton]="privacyAccepted && contactForm.form.valid"
+            [class.inactiveSendButton]="!privacyAccepted || !contactForm.form.valid"
+            [disabled]="!privacyAccepted || !contactForm.form.valid">
+            {{ 'CONTACT.SEND' | translate }}
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="responsiveScrollTopButtonContainer">
+      <button class="responsiveScrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
+    </div>
+  </div>
+</section>
+
+<div class="overlayMessage" *ngIf="showOverlay">
+  <p>{{ overlayMessage }}</p>
+</div>

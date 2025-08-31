@@ -1,0 +1,81 @@
+<section class="intro">
+    <div class="responsioveHeader">
+        <div class="burgerMenu" (click)="isMenuOpen = !isMenuOpen">
+            <img src="assets/img/otherSpecs/burgerMenu.svg" alt="Burger Menu" />
+        </div>
+        <div class="responsiveLogoMain">
+            <a href="https://marcel-reyes-langen.developerakademie.net/index.html" target="_blank" rel="noopener noreferrer">
+                <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" />
+            </a>
+            <p class="nameSmall">M. Reyes</p>
+            <p class="jobTitleSmall">developer</p>
+        </div>
+    </div>
+    <div class="mobileMenuOverlay" *ngIf="isMenuOpen">
+        <nav class="mobileNav">
+            <a href="#aboutMe-mobile" [ngClass]="{ 'active': activeLink === 'aboutMe' }"
+                (click)="handleNavClick('aboutMe', $event)">
+                {{ 'NAV.ABOUTME' | translate }}
+            </a>
+            <a href="#skills-mobile" [ngClass]="{'active': activeLink === 'skills'}"
+                (click)="handleNavClick('skills', $event)">{{
+                'NAV.SKILLS' | translate }}</a>
+            <a href="#projects-mobile" [ngClass]="{'active': activeLink === 'projects'}"
+                (click)="handleNavClick('projects', $event)">{{
+                'NAV.PROJECTS' | translate }}</a>
+            <a href="#contact-mobile" [ngClass]="{'active': activeLink === 'contact'}"
+                (click)="handleNavClick('contact', $event)">{{
+                'NAV.CONTACT' | translate }}</a>
+            <div class="langSwitch">
+                <app-language-switcher></app-language-switcher>
+            </div>
+        </nav>
+    </div>
+    <section class="left">
+        <div class="shapeWrapper">
+            <img class="shapeOne" src="assets/img/otherSpecs/shape.svg" alt="">
+            <img class="shapeTwo" src="assets/img/otherSpecs/shape2.svg" alt="">
+        </div>
+        <div class="shapeWrapperTwo">
+            <img class="shapeThree" [class.hidden]="isMenuOpen" src="assets/img/otherSpecs/shape3.svg" alt="">
+        </div>
+        <img class="profilePicture" [class.hidden]="isMenuOpen" src="assets/img/pictures/Ich_cutted.png" alt="">
+    </section>
+    <section class="right">
+        <div class="containerText">
+            <div class="logoAndSocials">
+                <div class="logoMain">
+                    <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" />
+                    <p class="nameSmall">M. Reyes</p>
+                    <p class="jobTitleSmall">developer</p>
+                </div>
+                <div class="socials">
+                    <a href="mailto:marcelreyeslangenhorst@gmail.com.contact?subject=Kontakt%20über%20Portfolio&body=Hallo%20Marcel%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
+                        (mouseenter)="isHoveredMail = true" (mouseleave)="isHoveredMail = false">
+                        <img [src]="isHoveredMail ? 'assets/img/otherSpecs/mailHover.svg' : 'assets/img/otherSpecs/mail.svg'"
+                            width="30" height="30" alt="Mail Logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/marcel-reyes-langenhorst-56b3022a7/" target="_blank"
+                        rel="noopener noreferrer" (mouseenter)="isHoveredLinkedin = true"
+                        (mouseleave)="isHoveredLinkedin = false">
+                        <img [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/linkedinHover.svg' : 'assets/img/otherSpecs/linkedin.svg'"
+                            width="30" height="30" alt="LinkedIn Logo" />
+                    </a>
+                    <a href="https://github.com/MarcelloRocketier" target="_blank" rel="noopener noreferrer"
+                        (mouseenter)="isHoveredGitHub = true" (mouseleave)="isHoveredGitHub = false">
+                        <img [src]="isHoveredGitHub ? 'assets/img/otherSpecs/githubHover.svg' : 'assets/img/otherSpecs/github.svg'"
+                            width="30" height="30" alt="GitHub Logo" />
+                    </a>
+                </div>
+            </div>
+            <p class="name">{{ 'INTRO.NAME' | translate }}</p>
+            <p class="jobTitle">{{ 'INTRO.JOBTITLE' | translate }}</p>
+        </div>
+        <div class="cta">
+            <a class="cta-button" href="#contact-desktop">
+                <img [src]="isHovered ? 'assets/img/otherSpecs/ArrowDownHover.svg' : 'assets/img/otherSpecs/Arrowdown.svg'"
+                    (mouseenter)="isHovered = true" (mouseleave)="isHovered = false" alt="Scroll down arrow" />
+            </a>
+        </div>
+    </section>
+</section>

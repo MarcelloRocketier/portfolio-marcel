@@ -1,0 +1,23 @@
+<section class="aboutMeMain" id="aboutMe-desktop">
+    <div>
+        <h1 id="aboutMe-mobile" class="name">{{ 'ABOUTME.NAME' | translate }}</h1>
+    </div>
+    <div class="locationContainer">
+        <div>
+            <div class="typingBox">
+                <img [src]="currentIcon" alt="Icon" class="typingIcon" />
+                <p class="typingText">
+                    <ng-container *ngFor="let segment of currentSegments">
+                        <span [style.color]="segment.color">
+                            {{ segment.translated | slice:0:getVisibleSegmentLength(segment) }}
+                        </span>
+                    </ng-container>
+                </p>
+            </div>
+        </div>
+        <div class="descriptionContainer">
+            <p class="description">{{ 'ABOUTME.DESCRIPTION' | translate }}</p>
+            <button (click)="scrollToContact()" class="descriptionButton">{{ 'ABOUTME.LETSTALK' | translate }}</button>
+        </div>
+    </div>
+</section>

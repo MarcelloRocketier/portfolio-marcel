@@ -1,0 +1,232 @@
+{
+  "NAV": {
+    "ABOUTME": "About Me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
+  "INTRO": {
+    "NAME": "Marcel Reyes L.",
+    "JOBTITLE": "Frontend Developer"
+  },
+  "ABOUTME": {
+    "NAME": "About Me",
+    "FIRSTANIMATION": {
+      "FIRSTPART": "I come",
+      "SECONDPART": "from NRW",
+      "THIRDPART": "..|"
+    },
+    "SECONDANIMATION": {
+      "FIRSTPART": "I am",
+      "SECONDPART": "looking for new challenges",
+      "THIRDPART": "..|"
+    },
+    "THIRDANIMATION": {
+      "FIRSTPART": "I am",
+      "SECONDPART": "open to project travel",
+      "THIRDPART": "..|"
+    },
+    "DESCRIPTION": "I am a passionate frontend developer focused on building modern, user-friendly and responsive web applications. With curiosity for new technologies, I constantly expand my skills.",
+    "LETSTALK": "Let's talk!"
+  },
+  "SKILLS": {
+    "TITLE": "My Skills",
+    "FRONTEND": ["HTML", "CSS", "JavaScript", "Angular"],
+    "BACKEND": ["Node.js", "Express", "MongoDB"],
+    "TOOLS": ["Git", "VS Code", "Figma"],
+    "LEARNINGNOW": "Currently learning:",
+    "LEARNINGNEXT": "I enjoy exploring new technologies, solving problems and constantly improving myself – that is what makes this job exciting for me."
+  },
+  "PROJECTS": {
+    "RESPONSIVE": {
+      "PROJECTONE": "1st Project",
+      "PROJECTTWO": "2nd Project",
+      "PROJECTTHREE": "3rd Project",
+      "PROJECTFOUR": "4th Project"
+    },
+    "PLACEHOLDER": {
+      "LIVE": "Coming soon...",
+      "REPO": "Uploading..."
+    },
+    "TITLE": "Projects",
+    "PROJECTONE": {
+      "TITLE": "1. Join",
+      "TITLEWO": "Join",
+      "DURATION": "Duration: 4 weeks",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "Join is a web-based Kanban board I developed together with a team. It enables task management, prioritization and efficient teamwork – inspired by tools like Trello."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "My workflow",
+          "TEXT": "I structured my work into planning, implementation and testing. With Kanban boards, Git workflows and regular reviews I managed to stay organized even in stressful phases."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "What I learned",
+          "TEXT": "Working in a team was very valuable. I learned to take responsibility, communicate clearly and stay flexible – both technically and organizationally."
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLONENAME": "JavaScript",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTWOENAME": "API",
+      "SKILLTHREE": "assets/img/skills/scrum.svg",
+      "SKILLTHREEENAME": "Scrum"
+    },
+    "PROJECTTWO": {
+      "TITLE": "2. 2D Game",
+      "TITLEWO": "2D Game Engine",
+      "DURATION": "Duration: 3 weeks",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "This game was built with HTML5 Canvas and JavaScript, focusing on animations and smooth gameplay."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Implementation",
+          "TEXT": "My 2D game offers a dynamic experience with boss fights, detailed animations and a solid level structure."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "My learnings",
+          "TEXT": "This project gave me a lot of insights and showed how versatile HTML, CSS and JavaScript can be in web development."
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/html.svg",
+      "SKILLONENAME": "HTML",
+      "SKILLTWO": "assets/img/skills/Javascript.svg",
+      "SKILLTWOENAME": "JavaScript",
+      "SKILLTHREE": "assets/img/skills/Css.svg",
+      "SKILLTHREEENAME": "CSS"
+    },
+    "PROJECTTHREE": {
+      "TITLE": "Coming soon",
+      "TITLEWO": "Coming soon",
+      "DURATION": "Duration: X weeks",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "A new project is currently in development. Stay tuned – it will be worth it!"
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Info",
+          "TEXT": "Subscribe to our newsletter to not miss the launch."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Thanks",
+          "TEXT": "Thanks for your patience and interest."
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLONENAME": "JavaScript",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTWOENAME": "API",
+      "SKILLTHREE": "assets/img/skills/scrum.svg",
+      "SKILLTHREEENAME": "Scrum"
+    },
+    "PROJECTFOUR": {
+      "TITLE": "Online soon",
+      "TITLEWO": "Online soon",
+      "DURATION": "Duration: X weeks",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "About this project",
+          "TEXT": "We are finalizing the details to go live soon."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "How I worked",
+          "TEXT": "Check back soon or subscribe to the newsletter to stay up to date."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Looking forward",
+          "TEXT": "I am excited to share more very soon!"
+        }
+      },
+      "SKILLHEADLINE": "Technologies",
+      "SKILLONE": "assets/img/skills/Linux.svg",
+      "SKILLONENAME": "Linux",
+      "SKILLTWO": "assets/img/skills/Python.svg",
+      "SKILLTWOENAME": "Python",
+      "SKILLTHREE": "assets/img/skills/API.svg",
+      "SKILLTHREEENAME": "API"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "I am looking forward to contributing to exciting projects. Feel free to reach out if you need support in web development or want to bring new ideas to life!",
+    "LETSTALK": "Let's work together!",
+    "NAME": "Your name",
+    "EMAIL": "Your email",
+    "MESSAGE": "Your message",
+    "PRIVACY_PART1": "I have read the",
+    "PRIVACY_PART2": "Legal Notice",
+    "PRIVACY_PART3": "and agree to the processing of my data.",
+    "SEND": "Send",
+    "ERROR_NAME_REQUIRED": "Please enter your name.",
+    "ERROR_NAME_MINLENGTH": "Your name must be at least 3 characters long.",
+    "ERROR_EMAIL_REQUIRED": "Please enter your email address.",
+    "ERROR_EMAIL_INVALID": "Please enter a valid email address.",
+    "ERROR_MESSAGE_REQUIRED": "Please enter a message.",
+    "ERROR_MESSAGE_MINLENGTH": "At least 25 characters required.",
+    "ERROR_MESSAGE_MAXLENGTH": "Maximum 500 characters allowed.",
+    "ERROR_PRIVACY": "Please confirm the legal notice.",
+    "SUCCESS": "Thanks for your message!",
+    "ERROR": "Sending failed. Please try again later."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© Marcel Reyes Langenhorst {{year}}",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "IMPRINT": "Imprint",
+    "PRIVACY": "Legal Notice"
+  },
+  "PRIVACY": {
+    "TITLE": "Legal Notice",
+    "LAST_UPDATED": "Last updated: September 2025",
+    "SECTIONS": {
+      "RESPONSIBLE": "Responsible",
+      "DATA_COLLECTION": "Data Collection",
+      "CONTACT_FORM": "Contact Form",
+      "LOG_FILES": "Server Logs",
+      "RIGHTS": "Your Rights",
+      "REVOCATION": "Revocation",
+      "SECURITY": "Security",
+      "HOSTING": "Hosting"
+    },
+    "DATA_COLLECTION_TEXT_1": "No personal data is stored or analyzed when visiting this website. No cookies or tracking are used.",
+    "CONTACT_FORM_TEXT_1": "If you contact me via the contact form, the provided data (e.g. name, email, message) will only be used to process your request.",
+    "CONTACT_FORM_TEXT_2": "Processing is based on your consent (Art. 6 para. 1 lit. a GDPR).",
+    "CONTACT_FORM_TEXT_3": "Your data will not be shared and will be deleted after handling your request.",
+    "LOG_FILES_TEXT_1": "The server automatically stores technical details with each request:",
+    "LOG_FILES_IP": "IP address",
+    "LOG_FILES_DATE": "Date and time",
+    "LOG_FILES_BROWSER": "Browser",
+    "LOG_FILES_OS": "Operating system",
+    "LOG_FILES_TEXT_2": "These logs are only used for error analysis and are not linked with other data.",
+    "RIGHTS_INTRO": "According to GDPR, you have the following rights:",
+    "RIGHTS_ACCESS": "Access your stored data (Art. 15 GDPR)",
+    "RIGHTS_CORRECTION": "Correction of inaccurate data (Art. 16 GDPR)",
+    "RIGHTS_DELETION": "Deletion of your data (Art. 17 GDPR)",
+    "RIGHTS_LIMITATION": "Restriction of processing (Art. 18 GDPR)",
+    "RIGHTS_OBJECTION": "Objection to processing (Art. 21 GDPR)",
+    "RIGHTS_TRANSFER": "Data portability (Art. 20 GDPR)",
+    "RIGHTS_CONTACT": "To exercise your rights, please contact:",
+    "REVOCATION_TEXT": "You can withdraw your consent at any time. Please send an email to",
+    "SECURITY_TEXT": "This website uses HTTPS encryption. Your data will be transmitted securely when sending the contact form.",
+    "HOSTING_TEXT": "The website is hosted on a private server in Germany and managed solely by Marcel Reyes Langenhorst.",
+    "BACK": "Back to homepage"
+  },
+  "LEGAL": {
+    "TITLE": "Imprint",
+    "OWNER": "Information according to § 5 TMG",
+    "DISCLAIMER_TITLE": "Liability for content",
+    "DISCLAIMER_TEXT": "The contents of this website were created with great care...",
+    "LINKS_TITLE": "Liability for links",
+    "LINKS_TEXT": "This site contains links to external third-party websites...",
+    "COPYRIGHT_TITLE": "Copyright",
+    "COPYRIGHT_TEXT": "The contents created by the website owner are subject to German copyright law..."
+  }
+}

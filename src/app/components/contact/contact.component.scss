@@ -1,0 +1,362 @@
+.contactsSection {
+  padding: 80px 150px 0 150px;
+  background-color: rgb(38, 46, 52);
+}
+
+.contactsWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contactsTitleWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  background-color: rgb(38, 46, 52);
+  text-align: center;
+
+  .contactsTitle {
+    font-family: Anta;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 120%;
+    color: rgb(137, 188, 255);
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  .scrollTopButton {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 38px;
+    height: 89px;
+    border: none;
+    background: url("../../../assets/img/otherSpecs/ArrowUp.svg") no-repeat
+      center;
+    background-size: contain;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      background-image: url("../../../assets/img/otherSpecs/ArrowUpHover.svg");
+    }
+  }
+}
+
+.contentUp {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contentMiddle {
+  display: none;
+}
+
+.contentDown {
+  display: flex;
+  justify-content: center;
+}
+
+.contactDescriptionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: rgba(248, 245, 236, 1);
+}
+
+.contactDescription {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 18px;
+  word-break: break-word;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  word-break: break-word;
+  text-align: left;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  width: 445px;
+  height: 124px;
+  background-color: rgb(38, 46, 52);
+  gap: 20px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .contactEmail,
+  .contactPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+
+    span {
+      width: 24px;
+      height: 24px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      color: rgba(137, 188, 217, 1);
+    }
+  }
+
+  .contactEmail {
+    span {
+      background-image: url("../../../assets/img/otherSpecs/iconEmail.svg");
+    }
+    &:hover span {
+      background-image: url("../../../assets/img/otherSpecs/iconEmailHover.svg");
+    }
+  }
+
+  .contactPhone {
+    span {
+      background-image: url("../../../assets/img/otherSpecs/iconPhone.svg");
+    }
+    &:hover span {
+      background-image: url("../../../assets/img/otherSpecs/iconPhoneHover.svg");
+    }
+  }
+}
+
+.contactForm {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  color: rgba(137, 188, 217, 1);
+}
+
+.label-error {
+  color: #e53935;
+  font-weight: 500;
+}
+
+.nameAndEmail {
+  display: flex;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 20px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+.nameInput {
+  width: 445px;
+  height: 60px;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(137, 188, 217, 1);
+  background-color: rgb(38, 46, 52);
+  color: rgba(137, 188, 217, 1);
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.emailInput {
+  width: 445px;
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(137, 188, 217, 1);
+  background-color: rgb(38, 46, 52);
+  color: rgba(137, 188, 217, 1);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.messageInput {
+  width: 911px;
+  height: 164px;
+  padding: 20px 20px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(137, 188, 217, 1);
+  background-color: rgb(38, 46, 52);
+  margin-bottom: 10px;
+  color: rgba(137, 188, 217, 1);
+}
+
+.privacyContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.error {
+  color: #e53935;
+  min-height: 20px;
+  font-size: 0.85rem;
+  margin-left: 35px;
+}
+
+.privacyCheckbox {
+  display: none;
+}
+
+.customCheckbox {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../assets/img/otherSpecs/checkboxUnclear.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.privacyCheckbox:checked + .customCheckbox {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../../assets/img/otherSpecs/checkboxChecked.svg");
+}
+
+.privacyText {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgba(248, 245, 236, 1);
+  .blueText {
+    color: rgba(137, 188, 217, 1);
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+.sendButtonContainer {
+  margin-top: auto;
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  .sendButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101px;
+    height: 48px;
+    opacity: 0.5;
+    gap: 10px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(248, 245, 236, 1);
+    background-color: rgb(38, 46, 52);
+    color: rgba(248, 245, 236, 1);
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    margin-bottom: 200px;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+  }
+
+  .activeSendButton {
+    border-color: rgb(152, 217, 255);
+    color: rgb(0, 0, 0);
+    background-color: rgb(152, 217, 255);
+  }
+
+  .inactiveSendButton {
+    border-color: grey;
+    color: grey;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}
+
+.responsiveScrollTopButtonContainer {
+  display: none;
+}
+
+.overlayMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(38, 46, 52, 0.95);
+  color: rgb(137, 188, 217);
+  padding: 30px 50px;
+  border: 2px solid rgb(137, 188, 217);
+  border-radius: 20px;
+  font-family: Josefin Sans;
+  font-size: 18px;
+  text-align: center;
+  z-index: 9999;
+  animation: fadeInOut 3s ease-in-out forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@import "contact.component.media-queries";

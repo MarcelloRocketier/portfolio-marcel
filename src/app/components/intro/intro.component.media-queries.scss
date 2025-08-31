@@ -1,0 +1,282 @@
+@import "../../../styles/mixins";
+
+@media (max-height: 890px) and (min-width: 1200px) {
+  .intro {
+    .left {
+      max-width: 50%;
+      max-height: 100%;
+
+      .shapeWrapper {
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+      }
+
+      .profilePicture {
+        bottom: 0;
+        left: 0;
+        width: 90%;
+        height: auto;
+        min-height: unset;
+      }
+
+      .shapeOne,
+      .shapeTwo {
+        bottom: 50px;
+        left: 0;
+        width: 90%;
+        height: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .intro {
+    .left {
+      .profilePicture {
+        width: 100%;
+        height: auto;
+        min-height: 80%;
+      }
+    }
+    .right {
+      .name {
+        font-size: 60px;
+      }
+      .jobTitle {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .intro {
+    .left {
+      .profilePicture {
+        width: 100%;
+        height: auto;
+        min-height: 60%;
+      }
+    }
+    .right {
+      .name {
+        font-size: 50px;
+      }
+      .jobTitle {
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  :host {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .intro {
+    height: auto;
+    padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .responsioveHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin: 20px 20px 0 20px;
+      width: 100%;
+      .burgerMenu {
+        z-index: 10;
+        cursor: pointer;
+
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      .responsiveLogoMain {
+        .name {
+          font-size: 40px;
+          margin-top: 1rem;
+        }
+
+        .jobTitle {
+          font-size: 30px;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+    .mobileMenuOverlay {
+      position: absolute;
+      top: 25%;
+      z-index: 1;
+      width: 313px;
+      height: 326px;
+      background: url("./../../../assets/img/otherSpecs/shape3.svg") no-repeat
+        center center;
+      background-size: cover;
+      z-index: 9;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      transform: scale(1.5, 1.5);
+      animation: fadeIn 0.3s ease;
+
+      .mobileNav {
+        font-family: Josefin Sans;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+
+        a {
+          font-size: 22px;
+          color: rgba(38, 46, 52, 1);
+          text-decoration: none;
+          font-family: "Josefin Sans", sans-serif;
+        }
+
+        a:active {
+          color: rgb(212, 231, 241);
+        }
+
+        .langSwitch {
+          margin-top: 1.5rem;
+          font-size: 18px;
+          color: rgba(38, 46, 52, 1);
+          display: flex;
+          gap: 0.5rem;
+          a:hover {
+            color: rgb(212, 231, 241);
+          }
+        }
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .left {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      padding: 2rem 0;
+
+      .shapeWrapper {
+        display: none;
+      }
+
+      .shapeWrapperTwo {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+
+        .shapeThree {
+          display: block;
+          width: 350px;
+          height: auto;
+        }
+      }
+
+      .profilePicture {
+        position: relative;
+        z-index: 2;
+        top: 100px;
+        width: 450px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      z-index: 1;
+
+      .containerText {
+        text-align: center;
+        margin-top: 1rem;
+
+        .logoMain {
+          display: none;
+        }
+
+        .socials {
+          display: none;
+        }
+      }
+
+      .cta {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .intro {
+    .mobileMenuOverlay {
+      transform: scale(1.2, 1.2);
+      background-size: contain;
+      padding: 0;
+    }
+
+    .mobileMenuOverlay .mobileNav {
+      font-size: 18px;
+      gap: 0.75rem;
+
+      a {
+        font-size: 18px;
+      }
+
+      .langSwitch {
+        font-size: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .intro {
+    .left {
+      padding: 0;
+    }
+    .right {
+      justify-content: flex-start;
+      .containerText {
+        .logoAndSocials {
+          padding-top: 25px;
+        }
+      }
+    }
+  }
+}

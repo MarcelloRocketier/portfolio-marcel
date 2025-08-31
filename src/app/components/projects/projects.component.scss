@@ -1,0 +1,212 @@
+.projectsSection {
+  padding-top: 80px;
+  background-color: rgb(38, 46, 52);
+}
+
+.projectsWrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.projectsTitle {
+  font-family: Anta;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: center;
+  color: rgb(137, 188, 255);
+  padding-bottom: 40px;
+}
+
+.projectTabs {
+  display: flex;
+  gap: 1rem;
+  padding-left: 90px;
+
+  button {
+    font-family: Josefin Sans;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    min-width: 248px;
+    min-height: 97px;
+    background: transparent;
+    border: none;
+    color: #89bcff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    font-weight: 500;
+
+    &.active {
+      min-width: 248px;
+      min-height: 97px;
+      background: rgba(137, 188, 217, 0.07);
+      color: rgba(248, 245, 236, 1);
+    }
+
+    &:hover {
+      color: rgba(248, 245, 236, 1);
+    }
+  }
+}
+
+.responsiveProjectTabs {
+  display: none;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: row;
+  background: rgba(137, 188, 217, 0.07);
+  padding: 3rem 6rem;
+  gap: 3rem;
+  align-items: flex-start;
+  text-align: left;
+
+  .placeholder-link {
+    display: flex;
+    align-items: center;
+    color: gray;
+    font-style: italic;
+    cursor: default;
+    text-decoration: none;
+  }
+
+  .responsiveContent {
+    display: none;
+  }
+
+  .projectContentLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .projectContentRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectSkills {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 30px;
+
+    .skillIcon {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+
+  .projectImage {
+    width: 453px;
+    height: 312px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+
+  .projectDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    color: #eee;
+
+    h3 {
+      font-family: Josefin Sans;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 120%;
+    }
+    p {
+      font-family: Josefin Sans;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      display: flex;
+      align-items: flex-start;
+      word-wrap: break-word;
+      word-break: break-word;
+      white-space: normal;
+
+      .miniShape {
+        width: 29px;
+        height: 26px;
+        margin-right: 10px;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .projectLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .buttonStyle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 132px;
+      height: 48px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-family: Josefin Sans;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .live {
+      background-color: rgba(137, 188, 217, 1);
+      color: #000;
+
+      &:hover {
+        background-color: rgba(248, 245, 236, 1);
+      }
+    }
+
+    .github {
+      background-color: rgba(137, 188, 217, 0.07);
+      border: 1px solid rgba(137, 188, 217, 1);
+      color: rgba(137, 188, 217, 1);
+
+      &:hover {
+        background-color: rgb(92, 104, 114);
+        color: white;
+      }
+    }
+
+    .placeholder {
+      background-color: #aaa;
+      color: #fff;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsWrapper {
+    padding: 0 1rem;
+  }
+}
+@import "projects.component.media-queries.scss";

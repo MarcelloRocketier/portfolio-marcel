@@ -1,0 +1,201 @@
+@import "../../../styles/mixins";
+
+:host {
+  margin: 0 auto;
+  display: block;
+  background-color: rgb(38, 46, 52);
+  min-height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+app-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+app-footer {
+  margin-top: auto;
+}
+
+.privacyScrollWrapper {
+  background-color: rgb(38, 46, 52);
+  max-height: calc(100vh - 214px);
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+
+.navbar {
+  background-color: rgb(137, 188, 255);
+  position: sticky;
+  top: 0;
+  height: 104px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  section {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+
+    .logoMain {
+      .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 52px;
+          height: 38px;
+        }
+      }
+      .nameSmall {
+        font-family: Anta;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        @include displayFlex;
+        color: #f8f5ec;
+      }
+      .jobTitleSmall {
+        font-family: Josefin Sans;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 120%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #262e34;
+      }
+    }
+    li a {
+      font-family: Josefin Sans;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 120%;
+      width: auto;
+      height: 55px;
+      color: #262e34;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+
+      &.active {
+        color: #f8f5ec;
+        background-image: url("../../../assets/img/otherSpecs/navbarEllipse.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        display: flex;
+        align-items: center;
+      }
+
+      &:hover {
+        color: #f8f5ec;
+      }
+    }
+    button {
+      background-color: #ffffff;
+      color: #000000;
+      border: none;
+      cursor: pointer;
+      font-weight: 500;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}
+
+.anchor-spacer {
+  display: block;
+  height: 104px;
+  margin-top: -104px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.privacy-policy {
+  max-width: 1440px;
+  width: 100%;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+  text-align: center;
+  margin: 0 auto;
+  
+  h1 {
+    color: rgb(137, 188, 255);
+    font-size: 40px;
+    padding-top: 50px;
+  }
+
+  h2 {
+    color: rgb(137, 188, 255);
+  }
+
+  a {
+    color: #1f5b99;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  p,
+  li {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+.back-button-wrapper {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(38, 46, 52);
+}
+
+.back-button {
+  padding: 5px 20px;
+  background-color: rgb(137, 188, 255);
+  border: none;
+  border-radius: 25px;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgb(112, 168, 240);
+  }
+}
+
+
+@import "./privacypolicy.component.media-queries";

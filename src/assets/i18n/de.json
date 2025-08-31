@@ -1,0 +1,232 @@
+{
+  "NAV": {
+    "ABOUTME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt"
+  },
+  "INTRO": {
+    "NAME": "Marcel Reyes L.",
+    "JOBTITLE": "Frontend-Entwickler"
+  },
+  "ABOUTME": {
+    "NAME": "Über mich",
+    "FIRSTANIMATION": {
+      "FIRSTPART": "Ich komme",
+      "SECONDPART": "aus NRW",
+      "THIRDPART": "..|"
+    },
+    "SECONDANIMATION": {
+      "FIRSTPART": "Ich suche",
+      "SECONDPART": "spannende neue Herausforderungen",
+      "THIRDPART": "..|"
+    },
+    "THIRDANIMATION": {
+      "FIRSTPART": "Ich bin",
+      "SECONDPART": "flexibel für Projekteinsätze",
+      "THIRDPART": "..|"
+    },
+    "DESCRIPTION": "Ich bin ein begeisterter Frontend-Entwickler mit Fokus auf moderne, nutzerfreundliche und responsive Weblösungen. Technologieaffin und lernbereit, baue ich mein Wissen kontinuierlich aus.",
+    "LETSTALK": "Let's talk!"
+  },
+  "SKILLS": {
+    "TITLE": "Meine Fähigkeiten",
+    "FRONTEND": ["HTML", "CSS", "JavaScript", "Angular"],
+    "BACKEND": ["Node.js", "Express", "MongoDB"],
+    "TOOLS": ["Git", "VS Code", "Figma"],
+    "LEARNINGNOW": "Momentan vertiefe ich:",
+    "LEARNINGNEXT": "Ich habe Freude daran, neue Technologien auszuprobieren, kreative Lösungen zu finden und mich ständig weiterzuentwickeln – genau das macht diesen Beruf für mich spannend."
+  },
+  "PROJECTS": {
+    "RESPONSIVE": {
+      "PROJECTONE": "1. Projekt",
+      "PROJECTTWO": "2. Projekt",
+      "PROJECTTHREE": "3. Projekt",
+      "PROJECTFOUR": "4. Projekt"
+    },
+    "PLACEHOLDER": {
+      "LIVE": "In Arbeit...",
+      "REPO": "Wird hochgeladen..."
+    },
+    "TITLE": "Projekte",
+    "PROJECTONE": {
+      "TITLE": "1. Join",
+      "TITLEWO": "Join",
+      "DURATION": "Dauer: 4 Wochen",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Projektbeschreibung",
+          "TEXT": "Join ist ein webbasiertes Kanban-Board, das ich im Team umgesetzt habe. Es ermöglicht Aufgabenverwaltung, Priorisierung und effiziente Teamarbeit – inspiriert von Tools wie Trello."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Mein Workflow",
+          "TEXT": "Ich habe die Arbeit in Planung, Umsetzung und Testing aufgeteilt. Mit Kanban-Listen, Git-Workflows und regelmäßigen Reviews konnte ich auch in stressigen Phasen strukturiert arbeiten."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Erfahrungen",
+          "TEXT": "Die Teamarbeit war sehr wertvoll. Ich habe gelernt, Verantwortung zu übernehmen, klar zu kommunizieren und flexibel auf Herausforderungen zu reagieren – sowohl technisch als auch organisatorisch."
+        }
+      },
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLONENAME": "JavaScript",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTWOENAME": "API",
+      "SKILLTHREE": "assets/img/skills/scrum.svg",
+      "SKILLTHREEENAME": "Scrum"
+    },
+    "PROJECTTWO": {
+      "TITLE": "2. 2D Spiel",
+      "TITLEWO": "2D Spiel-Engine",
+      "DURATION": "Dauer: 3 Wochen",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Projektbeschreibung",
+          "TEXT": "Dieses Spiel entstand mit HTML5 Canvas und JavaScript und legt besonderen Wert auf Animationen und sauberes Gameplay."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Umsetzung",
+          "TEXT": "Mein 2D-Game bietet ein dynamisches Spielerlebnis mit Bosskämpfen, Animationen und einer soliden Levelstruktur."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Meine Learnings",
+          "TEXT": "Das Projekt hat mir viele Einblicke gegeben und gezeigt, welche Möglichkeiten HTML, CSS und JavaScript in der Webentwicklung bieten."
+        }
+      },
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/html.svg",
+      "SKILLONENAME": "HTML",
+      "SKILLTWO": "assets/img/skills/Javascript.svg",
+      "SKILLTWOENAME": "JavaScript",
+      "SKILLTHREE": "assets/img/skills/Css.svg",
+      "SKILLTHREEENAME": "CSS"
+    },
+    "PROJECTTHREE": {
+      "TITLE": "Demnächst verfügbar",
+      "TITLEWO": "Demnächst verfügbar",
+      "DURATION": "Dauer: X Wochen",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Projektbeschreibung",
+          "TEXT": "Ein neues Projekt ist in Arbeit. Bleib gespannt – es wird sich lohnen!"
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Info",
+          "TEXT": "Trage dich in unseren Newsletter ein, um den Start nicht zu verpassen."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Danke",
+          "TEXT": "Danke für dein Interesse und deine Geduld."
+        }
+      },
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/Javascript.svg",
+      "SKILLONENAME": "JavaScript",
+      "SKILLTWO": "assets/img/skills/API.svg",
+      "SKILLTWOENAME": "API",
+      "SKILLTHREE": "assets/img/skills/scrum.svg",
+      "SKILLTHREEENAME": "Scrum"
+    },
+    "PROJECTFOUR": {
+      "TITLE": "Bald online",
+      "TITLEWO": "Bald online",
+      "DURATION": "Dauer: X Wochen",
+      "DESCRIPTIONS": {
+        "DESCRIPTIONONE": {
+          "HEADLINE": "Projektbeschreibung",
+          "TEXT": "Wir arbeiten an den letzten Details, um bald live zu gehen."
+        },
+        "DESCRIPTIONTWO": {
+          "HEADLINE": "Arbeitsweise",
+          "TEXT": "Besuche uns bald wieder oder abonniere den Newsletter, um informiert zu bleiben."
+        },
+        "DESCRIPTIONTHREE": {
+          "HEADLINE": "Meine Erfahrung",
+          "TEXT": "Ich freue mich, bald mehr zeigen zu können!"
+        }
+      },
+      "SKILLHEADLINE": "Technologien",
+      "SKILLONE": "assets/img/skills/Linux.svg",
+      "SKILLONENAME": "Linux",
+      "SKILLTWO": "assets/img/skills/Python.svg",
+      "SKILLTWOENAME": "Python",
+      "SKILLTHREE": "assets/img/skills/API.svg",
+      "SKILLTHREEENAME": "API"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "DESCRIPTION": "Ich freue mich darauf, spannende Projekte aktiv mitzugestalten. Melde dich gerne, wenn du Unterstützung in der Webentwicklung brauchst oder Ideen gemeinsam umsetzen willst!",
+    "LETSTALK": "Lass uns zusammenarbeiten!",
+    "NAME": "Dein Name",
+    "EMAIL": "Deine E-Mail",
+    "MESSAGE": "Deine Nachricht",
+    "PRIVACY_PART1": "Ich habe die",
+    "PRIVACY_PART2": "Rechtlichen Hinweise",
+    "PRIVACY_PART3": "gelesen und stimme der Datenverarbeitung zu.",
+    "SEND": "Absenden",
+    "ERROR_NAME_REQUIRED": "Bitte gib deinen Namen ein.",
+    "ERROR_NAME_MINLENGTH": "Dein Name muss mindestens 3 Zeichen lang sein.",
+    "ERROR_EMAIL_REQUIRED": "Bitte gib deine E-Mail-Adresse ein.",
+    "ERROR_EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "ERROR_MESSAGE_REQUIRED": "Bitte gib eine Nachricht ein.",
+    "ERROR_MESSAGE_MINLENGTH": "Mindestens 25 Zeichen nötig.",
+    "ERROR_MESSAGE_MAXLENGTH": "Maximal 500 Zeichen möglich.",
+    "ERROR_PRIVACY": "Bitte bestätige die rechtlichen Hinweise.",
+    "SUCCESS": "Danke für deine Nachricht!",
+    "ERROR": "Senden fehlgeschlagen. Bitte später erneut versuchen."
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© Marcel Reyes Langenhorst {{year}}",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "IMPRINT": "Impressum",
+    "PRIVACY": "Rechtliche Hinweise"
+  },
+  "PRIVACY": {
+    "TITLE": "Rechtliche Hinweise",
+    "LAST_UPDATED": "Stand: September 2025",
+    "SECTIONS": {
+      "RESPONSIBLE": "Verantwortlicher",
+      "DATA_COLLECTION": "Datenerhebung",
+      "CONTACT_FORM": "Kontaktformular",
+      "LOG_FILES": "Server-Logs",
+      "RIGHTS": "Deine Rechte",
+      "REVOCATION": "Widerruf",
+      "SECURITY": "Sicherheit",
+      "HOSTING": "Hosting"
+    },
+    "DATA_COLLECTION_TEXT_1": "Beim Besuch dieser Website werden keine persönlichen Daten gespeichert oder ausgewertet. Es werden weder Cookies gesetzt noch Tracking betrieben.",
+    "CONTACT_FORM_TEXT_1": "Daten aus dem Kontaktformular (z. B. Name, E-Mail, Nachricht) werden ausschließlich zur Bearbeitung deiner Anfrage genutzt.",
+    "CONTACT_FORM_TEXT_2": "Die Verarbeitung erfolgt auf Grundlage deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).",
+    "CONTACT_FORM_TEXT_3": "Die Daten werden nicht weitergegeben und nach Abschluss der Bearbeitung gelöscht.",
+    "LOG_FILES_TEXT_1": "Der Server speichert bei jedem Zugriff automatisch technische Angaben:",
+    "LOG_FILES_IP": "IP-Adresse",
+    "LOG_FILES_DATE": "Datum und Uhrzeit",
+    "LOG_FILES_BROWSER": "Browser",
+    "LOG_FILES_OS": "Betriebssystem",
+    "LOG_FILES_TEXT_2": "Diese Logs dienen ausschließlich zur Fehleranalyse und werden nicht mit anderen Daten verknüpft.",
+    "RIGHTS_INTRO": "Du hast folgende Rechte gemäß DSGVO:",
+    "RIGHTS_ACCESS": "Auskunft über gespeicherte Daten (Art. 15 DSGVO)",
+    "RIGHTS_CORRECTION": "Korrektur falscher Daten (Art. 16 DSGVO)",
+    "RIGHTS_DELETION": "Löschung deiner Daten (Art. 17 DSGVO)",
+    "RIGHTS_LIMITATION": "Einschränkung der Verarbeitung (Art. 18 DSGVO)",
+    "RIGHTS_OBJECTION": "Widerspruch gegen Verarbeitung (Art. 21 DSGVO)",
+    "RIGHTS_TRANSFER": "Datenübertragbarkeit (Art. 20 DSGVO)",
+    "RIGHTS_CONTACT": "Wende dich zur Ausübung deiner Rechte an:",
+    "REVOCATION_TEXT": "Du kannst deine Einwilligung jederzeit widerrufen. Schicke dazu eine E-Mail an",
+    "SECURITY_TEXT": "Diese Website nutzt HTTPS-Verschlüsselung. Übermittelte Daten werden sicher übertragen.",
+    "HOSTING_TEXT": "Die Website wird auf einem privaten Server in Deutschland gehostet und ausschließlich von Marcel Reyes Langenhorst betreut.",
+    "BACK": "Zurück zur Startseite"
+  },
+  "LEGAL": {
+    "TITLE": "Impressum",
+    "OWNER": "Angaben gemäß § 5 TMG",
+    "DISCLAIMER_TITLE": "Haftung für Inhalte",
+    "DISCLAIMER_TEXT": "Die Inhalte dieser Seite wurden mit größter Sorgfalt erstellt...",
+    "LINKS_TITLE": "Haftung für Links",
+    "LINKS_TEXT": "Diese Seite enthält Links zu externen Websites Dritter...",
+    "COPYRIGHT_TITLE": "Urheberrecht",
+    "COPYRIGHT_TEXT": "Die erstellten Inhalte dieser Seite unterliegen dem deutschen Urheberrecht..."
+  }
+}
