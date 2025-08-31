@@ -198,6 +198,10 @@ export class ProjectsComponent {
     this.focusTab(targetIndex);
   }
 
+  trackByIndex(index: number, _item: unknown): number {
+    return index;
+  }
+
   setActiveProject(index: number) {
     this.activeProjectIndex = index;
   }
