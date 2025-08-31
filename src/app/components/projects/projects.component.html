@@ -67,7 +67,7 @@
           <img *ngFor="let skill of project.usedSkillKeys" [src]="skill | translate" alt="Skill Icon"
             class="skillIcon" />
         </div>
-        <img [src]="project.image" class="projectImage" [alt]="project.titleKey | translate" />
+        <img [src]="project.image" class="projectImage" [alt]="project.titleKey | translate" loading="lazy" decoding="async" />
         <div class="projectLinks">
           <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" class="buttonStyle live">
             Live Test
