@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
@@ -162,6 +162,41 @@ export class ProjectsComponent {
   ];
 
   activeProjectIndex = 0;
+
+  @ViewChildren('projectTab') tabs?: QueryList<ElementRef<HTMLElement>>;
+
+  private moveIndex(current: number, delta: number): number {
+    const len = this.projects.length;
+    return (current + delta + len) % len;
+  }
+
+  focusTab(index: number) {
+    const el = this.tabs?.get(index)?.nativeElement;
+    if (el) el.focus();
+  }
+
+  onKeydownTabs(event: KeyboardEvent, index: number) {
+    let targetIndex = index;
+    switch (event.key) {
+      case 'ArrowRight':
+        targetIndex = this.moveIndex(index, 1);
+        break;
+      case 'ArrowLeft':
+        targetIndex = this.moveIndex(index, -1);
+        break;
+      case 'Home':
+        targetIndex = 0;
+        break;
+      case 'End':
+        targetIndex = this.projects.length - 1;
+        break;
+      default:
+        return;
+    }
+    event.preventDefault();
+    this.setActiveProject(targetIndex);
+    this.focusTab(targetIndex);
+  }
 
   setActiveProject(index: number) {
     this.activeProjectIndex = index;
