@@ -3,7 +3,7 @@
     <h1 id="projects-mobile" class="projectsTitle">{{ 'PROJECTS.TITLE' | translate }}</h1>
 
     <div class="projectTabs" role="tablist" aria-label="Projects tabs (desktop)">
-      <button *ngFor="let project of projects; let i = index"
+      <button *ngFor="let project of projects; let i = index; trackBy: trackByIndex"
               type="button"
               (click)="setActiveProject(i)"
               [class.active]="i === activeProjectIndex"
@@ -16,7 +16,7 @@
       </button>
     </div> 
     <div class="responsiveProjectTabs" role="tablist" aria-label="Projects tabs (mobile)">
-      <button *ngFor="let r of responsiveProject; let i = index"
+      <button *ngFor="let r of responsiveProject; let i = index; trackBy: trackByIndex"
               type="button"
               (click)="setActiveProject(i)"
               [class.active]="i === activeProjectIndex"

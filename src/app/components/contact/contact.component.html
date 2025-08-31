@@ -2,7 +2,7 @@
   <div class="contactsWrapper">
     <div class="contactsTitleWrapper">
       <h2 id="contact-mobile" class="contactsTitle">{{ 'CONTACT.TITLE' | translate }}</h2>
-      <button class="scrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
+      <button type="button" class="scrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
     </div>
     <div class="contentUp">
       <div class="contactDescriptionContainer">
@@ -25,7 +25,7 @@
     <div class="contentDown">
       <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contactForm">
         <div class="nameAndEmail">
-          <label class="name" [class.label-error]="nameInput.invalid && nameInput.touched">
+          <label class="name" id="nameLabel" for="name" [class.label-error]="nameInput.invalid && nameInput.touched">
             {{
             nameInput.invalid && nameInput.errors?.['minlength']
             ? ('CONTACT.ERROR_NAME_MINLENGTH' | translate)
@@ -33,10 +33,22 @@
             ? ('CONTACT.ERROR_NAME_REQUIRED' | translate)
             : ('CONTACT.NAME' | translate)
             }}
-            <input type="text" class="nameInput" name="name" [(ngModel)]="name" minlength="3" required
-              #nameInput="ngModel" [class.invalid]="nameInput.invalid && nameInput.touched" />
+            <input
+              id="name"
+              type="text"
+              class="nameInput"
+              name="name"
+              [(ngModel)]="name"
+              minlength="3"
+              required
+              autocomplete="name"
+              #nameInput="ngModel"
+              [class.invalid]="nameInput.invalid && nameInput.touched"
+              [attr.aria-describedby]="'nameLabel'"
+              [attr.aria-invalid]="nameInput.invalid ? 'true' : null"
+            />
           </label>
-          <label class="email" [class.label-error]="emailInput.invalid && emailInput.touched">
+          <label class="email" id="emailLabel" for="email" [class.label-error]="emailInput.invalid && emailInput.touched">
             {{
             emailInput.invalid && emailInput.errors?.['pattern']
             ? ('CONTACT.ERROR_EMAIL_INVALID' | translate)
@@ -44,16 +56,27 @@
             ? ('CONTACT.ERROR_EMAIL_REQUIRED' | translate)
             : ('CONTACT.EMAIL' | translate)
             }}
-            <input type="email" class="emailInput" name="email" [(ngModel)]="email" required
-              pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" #emailInput="ngModel"
-              [class.invalid]="emailInput.invalid && emailInput.touched" />
+            <input
+              id="email"
+              type="email"
+              class="emailInput"
+              name="email"
+              [(ngModel)]="email"
+              required
+              autocomplete="email"
+              pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
+              #emailInput="ngModel"
+              [class.invalid]="emailInput.invalid && emailInput.touched"
+              [attr.aria-describedby]="'emailLabel'"
+              [attr.aria-invalid]="emailInput.invalid ? 'true' : null"
+            />
           </label>
         </div>
         <div>
-          <label class="message" [class.label-error]="
-    (messageInput.errors?.['minlength'] && messageInput.touched) ||
-    (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))
-  ">
+          <label class="message" id="messageLabel" for="message" [class.label-error]="
+        (messageInput.errors?.['minlength'] && messageInput.touched) ||
+        (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))
+      ">
             {{
             messageInput.errors?.['minlength']
             ? ('CONTACT.ERROR_MESSAGE_MINLENGTH' | translate)
@@ -61,16 +84,33 @@
             ? ('CONTACT.ERROR_MESSAGE_REQUIRED' | translate)
             : ('CONTACT.MESSAGE' | translate)
             }}
-            <textarea [(ngModel)]="message" #messageInput="ngModel" class="messageInput" name="message" minlength="25"
-              maxlength="250" rows="4" required [class.invalid]="
-      (messageInput.errors?.['minlength'] && messageInput.touched) ||
-      (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))
-    ">
-  </textarea>
+            <textarea
+              id="message"
+              [(ngModel)]="message"
+              #messageInput="ngModel"
+              class="messageInput"
+              name="message"
+              minlength="25"
+              maxlength="250"
+              rows="4"
+              required
+              [class.invalid]="(messageInput.errors?.['minlength'] && messageInput.touched) || (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))"
+              [attr.aria-describedby]="'messageLabel'"
+              [attr.aria-invalid]="(messageInput.errors?.['minlength'] || messageInput.errors?.['required']) ? 'true' : null"
+            ></textarea>
           </label>
-          <label class="privacyContainer" [class.label-error]="privacy.invalid && privacy.touched">
-            <input type="checkbox" name="privacyAccepted" class="privacyCheckbox" [(ngModel)]="privacyAccepted" required
-              #privacy="ngModel" />
+          <label class="privacyContainer" id="privacyLabel" for="privacyAccepted" [class.label-error]="privacy.invalid && privacy.touched">
+            <input
+              id="privacyAccepted"
+              type="checkbox"
+              name="privacyAccepted"
+              class="privacyCheckbox"
+              [(ngModel)]="privacyAccepted"
+              required
+              #privacy="ngModel"
+              [attr.aria-describedby]="'privacyLabel'"
+              [attr.aria-invalid]="privacy.invalid ? 'true' : null"
+            />
             <span class="customCheckbox"></span>
             <p class="privacyText">
               {{ 'CONTACT.PRIVACY_PART1' | translate }}
@@ -96,11 +136,11 @@
       </form>
     </div>
     <div class="responsiveScrollTopButtonContainer">
-      <button class="responsiveScrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
+      <button type="button" class="responsiveScrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
     </div>
   </div>
 </section>
 
-<div class="overlayMessage" *ngIf="showOverlay">
+<div class="overlayMessage" *ngIf="showOverlay" role="status" aria-live="polite">
   <p>{{ overlayMessage }}</p>
 </div>
