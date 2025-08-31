@@ -2,27 +2,27 @@
   <div class="projectsWrapper">
     <h1 id="projects-mobile" class="projectsTitle">{{ 'PROJECTS.TITLE' | translate }}</h1>
 
-    <div class="projectTabs" role="tablist">
+    <div class="projectTabs" role="tablist" aria-label="Projects tabs (desktop)">
       <button *ngFor="let project of projects; let i = index"
               type="button"
               (click)="setActiveProject(i)"
               [class.active]="i === activeProjectIndex"
               role="tab"
               [attr.id]="'project-tab-d-' + i"
-              [attr.aria-selected]="i === activeProjectIndex"
+              [attr.aria-selected]="i === activeProjectIndex ? 'true' : 'false'"
               [attr.tabindex]="i === activeProjectIndex ? 0 : -1"
               [attr.aria-controls]="'project-panel-' + i">
         {{ project.titleKey | translate }}
       </button>
     </div> 
-    <div class="responsiveProjectTabs" role="tablist">
+    <div class="responsiveProjectTabs" role="tablist" aria-label="Projects tabs (mobile)">
       <button *ngFor="let r of responsiveProject; let i = index"
               type="button"
               (click)="setActiveProject(i)"
               [class.active]="i === activeProjectIndex"
               role="tab"
               [attr.id]="'project-tab-m-' + i"
-              [attr.aria-selected]="i === activeProjectIndex"
+              [attr.aria-selected]="i === activeProjectIndex ? 'true' : 'false'"
               [attr.tabindex]="i === activeProjectIndex ? 0 : -1"
               [attr.aria-controls]="'project-panel-' + i">
         {{ r.projectTitleKey | translate }}
