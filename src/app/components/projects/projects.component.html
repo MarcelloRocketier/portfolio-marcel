@@ -2,19 +2,29 @@
   <div class="projectsWrapper">
     <h1 id="projects-mobile" class="projectsTitle">{{ 'PROJECTS.TITLE' | translate }}</h1>
 
-    <div class="projectTabs">
-      <button *ngFor="let project of projects; let i = index" (click)="setActiveProject(i)"
-        [class.active]="i === activeProjectIndex">
+    <div class="projectTabs" role="tablist">
+      <button *ngFor="let project of projects; let i = index"
+              (click)="setActiveProject(i)"
+              [class.active]="i === activeProjectIndex"
+              role="tab"
+              [attr.id]="'project-tab-d-' + i"
+              [attr.aria-selected]="i === activeProjectIndex"
+              [attr.aria-controls]="'project-panel'">
         {{ project.titleKey | translate }}
       </button>
     </div>
-    <div class="responsiveProjectTabs">
-      <button *ngFor="let r of responsiveProject; let i = index" (click)="setActiveProject(i)" [class.active]="i === activeProjectIndex">
+    <div class="responsiveProjectTabs" role="tablist">
+      <button *ngFor="let r of responsiveProject; let i = index"
+              (click)="setActiveProject(i)"
+              [class.active]="i === activeProjectIndex"
+              role="tab"
+              [attr.id]="'project-tab-m-' + i"
+              [attr.aria-selected]="i === activeProjectIndex"
+              [attr.aria-controls]="'project-panel'">
         {{ r.projectTitleKey | translate }}
       </button>
     </div>
-    <div class="projectCard" [ngClass]="{ 'specialBorder': activeProjectIndex === 3 }"
-      *ngIf="projects[activeProjectIndex] as project">
+    <div class="projectCard" [ngClass]="{ 'specialBorder': activeProjectIndex === 3 }" role="tabpanel" id="project-panel" [attr.aria-labelledby]="'project-tab-d-' + activeProjectIndex + ' project-tab-m-' + activeProjectIndex" *ngIf="projects[activeProjectIndex] as project">
       <div class="responsiveContent">
         <h2>{{ project.titleKeyWO | translate }}</h2>
         <p class="responsiveUsedSkills">
@@ -63,8 +73,10 @@
       <div class="projectContentRight">
         <h3>{{ project.usedSkillHeadline | translate }}</h3>
         <div class="projectSkills">
-          <img *ngFor="let skill of project.usedSkillKeys" [src]="skill | translate" alt="Skill Icon"
-            class="skillIcon" />
+          <img *ngFor="let skill of project.usedSkillKeys; let i = index"
+               [src]="skill | translate"
+               [attr.alt]="project.usedSkillNameKeys[i] | translate"
+               class="skillIcon" />
         </div>
         <img [src]="project.image" class="projectImage" [alt]="project.titleKey | translate" loading="lazy" decoding="async" />
         <div class="projectLinks">
