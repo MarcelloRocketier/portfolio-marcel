@@ -9,9 +9,8 @@
       </button>
     </div>
     <div class="responsiveProjectTabs">
-      <button *ngFor="let responsiveProject of responsiveProject; let i = index" (click)="setActiveProject(i)"
-        [class.active]="i === activeProjectIndex">
-        {{ responsiveProject.projectTitleKey | translate }}
+      <button *ngFor="let r of responsiveProject; let i = index" (click)="setActiveProject(i)" [class.active]="i === activeProjectIndex">
+        {{ r.projectTitleKey | translate }}
       </button>
     </div>
     <div class="projectCard" [ngClass]="{ 'specialBorder': activeProjectIndex === 3 }"
@@ -26,7 +25,7 @@
         </p>
         <p class="responsiveDuration">{{ project.duration | translate }}</p>
         <div class="responsiveProjectImageWrapper">
-          <img [src]="project.image" class="responsiveProjectImage" [alt]="project.titleKey | translate" />
+          <img [src]="project.image" class="responsiveProjectImage" [alt]="project.titleKey | translate" loading="lazy" decoding="async" />
         </div>
         <ng-container *ngFor="let headlineKey of project.descriptionHeadlineKeys; let i = index">
           <h3><img class="miniShape" src="assets/img/otherSpecs/miniShape.svg" alt="" /> {{ headlineKey | translate }}
@@ -36,13 +35,13 @@
           </p>
         </ng-container>
         <div class="responsiveProjectLinks">
-          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" class="buttonStyle live">
+          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" rel="noopener noreferrer" class="buttonStyle live">
             Live Test
           </a>
           <ng-template #noLiveRight>
             <span class="buttonStyle placeholder">Kommt bald</span>
           </ng-template>
-          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" class="buttonStyle github">
+          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" rel="noopener noreferrer" class="buttonStyle github">
             GitHub
           </a>
           <ng-template #noRepoRight>
@@ -69,13 +68,13 @@
         </div>
         <img [src]="project.image" class="projectImage" [alt]="project.titleKey | translate" loading="lazy" decoding="async" />
         <div class="projectLinks">
-          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" class="buttonStyle live">
+          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" rel="noopener noreferrer" class="buttonStyle live">
             Live Test
           </a>
           <ng-template #noLiveRight>
             <span class="placeholder-link fullButton">Kommt bald</span>
           </ng-template>
-          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" class="buttonStyle github">
+          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" rel="noopener noreferrer" class="buttonStyle github">
             GitHub
           </a>
           <ng-template #noRepoRight>
