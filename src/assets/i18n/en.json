@@ -1,6 +1,6 @@
 {
   "NAV": {
-    "ABOUTME": "About Me",
+    "ABOUTME": "Why Me",
     "SKILLS": "Skills",
     "PROJECTS": "Projects",
     "CONTACT": "Contact"
@@ -13,20 +13,20 @@
     "NAME": "About Me",
     "FIRSTANIMATION": {
       "FIRSTPART": "I come",
-      "SECONDPART": "from NRW",
+      "SECONDPART": "from Beckum",
       "THIRDPART": "..|"
     },
     "SECONDANIMATION": {
       "FIRSTPART": "I am",
-      "SECONDPART": "looking for new challenges",
+      "SECONDPART": "open for new challenges",
       "THIRDPART": "..|"
     },
     "THIRDANIMATION": {
       "FIRSTPART": "I am",
-      "SECONDPART": "open to project travel",
+      "SECONDPART": "open to business travel",
       "THIRDPART": "..|"
     },
-    "DESCRIPTION": "I am a passionate frontend developer focused on building modern, user-friendly and responsive web applications. With curiosity for new technologies, I constantly expand my skills.",
+    "DESCRIPTION": "I am a dedicated frontend engineer focused on creating modern, responsive and user-friendly web applications. With curiosity for new technologies, I continuously improve my skills.",
     "LETSTALK": "Let's talk!"
   },
   "SKILLS": {
@@ -35,7 +35,7 @@
     "BACKEND": ["Node.js", "Express", "MongoDB"],
     "TOOLS": ["Git", "VS Code", "Figma"],
     "LEARNINGNOW": "Currently learning:",
-    "LEARNINGNEXT": "I enjoy exploring new technologies, solving problems and constantly improving myself – that is what makes this job exciting for me."
+    "LEARNINGNEXT": "I enjoy exploring new technologies, building creative solutions and continuously improving – that’s what makes this career exciting for me."
   },
   "PROJECTS": {
     "RESPONSIVE": {
@@ -60,11 +60,11 @@
         },
         "DESCRIPTIONTWO": {
           "HEADLINE": "My workflow",
-          "TEXT": "I structured my work into planning, implementation and testing. With Kanban boards, Git workflows and regular reviews I managed to stay organized even in stressful phases."
+          "TEXT": "I organized my tasks into planning, coding and testing. Using Kanban boards, Git workflows and regular reviews helped me stay structured even during busy times."
         },
         "DESCRIPTIONTHREE": {
           "HEADLINE": "What I learned",
-          "TEXT": "Working in a team was very valuable. I learned to take responsibility, communicate clearly and stay flexible – both technically and organizationally."
+          "TEXT": "Collaborating with my team was very enriching. I learned to take responsibility, communicate clearly and stay flexible – both technically and organizationally."
         }
       },
       "SKILLHEADLINE": "Technologies",
@@ -156,7 +156,7 @@
   },
   "CONTACT": {
     "TITLE": "Contact",
-    "DESCRIPTION": "I am looking forward to contributing to exciting projects. Feel free to reach out if you need support in web development or want to bring new ideas to life!",
+    "DESCRIPTION": "I am excited to take part in impactful projects. Reach out if you are looking for reliable support in web development or want to bring new ideas to life!",
     "LETSTALK": "Let's work together!",
     "NAME": "Your name",
     "EMAIL": "Your email",
@@ -181,7 +181,7 @@
     "GITHUB": "GitHub",
     "LINKEDIN": "LinkedIn",
     "IMPRINT": "Imprint",
-    "PRIVACY": "Legal Notice"
+    "PRIVACY": "Legal Information"
   },
   "PRIVACY": {
     "TITLE": "Legal Notice",
@@ -216,14 +216,14 @@
     "RIGHTS_CONTACT": "To exercise your rights, please contact:",
     "REVOCATION_TEXT": "You can withdraw your consent at any time. Please send an email to",
     "SECURITY_TEXT": "This website uses HTTPS encryption. Your data will be transmitted securely when sending the contact form.",
-    "HOSTING_TEXT": "The website is hosted on a private server in Germany and managed solely by Marcel Reyes Langenhorst.",
+    "HOSTING_TEXT": "The website is hosted on a private server in Germany and fully managed by Marcel Reyes Langenhorst.",
     "BACK": "Back to homepage"
   },
   "LEGAL": {
     "TITLE": "Imprint",
-    "OWNER": "Information according to § 5 TMG",
+    "OWNER": "Information according to § 5 German TMG",
     "DISCLAIMER_TITLE": "Liability for content",
-    "DISCLAIMER_TEXT": "The contents of this website were created with great care...",
+    "DISCLAIMER_TEXT": "The content on this website has been created with the greatest care...",
     "LINKS_TITLE": "Liability for links",
     "LINKS_TEXT": "This site contains links to external third-party websites...",
     "COPYRIGHT_TITLE": "Copyright",
