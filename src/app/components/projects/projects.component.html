@@ -4,27 +4,36 @@
 
     <div class="projectTabs" role="tablist">
       <button *ngFor="let project of projects; let i = index"
+              type="button"
               (click)="setActiveProject(i)"
               [class.active]="i === activeProjectIndex"
               role="tab"
               [attr.id]="'project-tab-d-' + i"
               [attr.aria-selected]="i === activeProjectIndex"
-              [attr.aria-controls]="'project-panel'">
+              [attr.tabindex]="i === activeProjectIndex ? 0 : -1"
+              [attr.aria-controls]="'project-panel-' + i">
         {{ project.titleKey | translate }}
       </button>
     </div>
     <div class="responsiveProjectTabs" role="tablist">
       <button *ngFor="let r of responsiveProject; let i = index"
+              type="button"
               (click)="setActiveProject(i)"
               [class.active]="i === activeProjectIndex"
               role="tab"
               [attr.id]="'project-tab-m-' + i"
               [attr.aria-selected]="i === activeProjectIndex"
-              [attr.aria-controls]="'project-panel'">
+              [attr.tabindex]="i === activeProjectIndex ? 0 : -1"
+              [attr.aria-controls]="'project-panel-' + i">
         {{ r.projectTitleKey | translate }}
       </button>
     </div>
-    <div class="projectCard" [ngClass]="{ 'specialBorder': activeProjectIndex === 3 }" role="tabpanel" id="project-panel" [attr.aria-labelledby]="'project-tab-d-' + activeProjectIndex + ' project-tab-m-' + activeProjectIndex" *ngIf="projects[activeProjectIndex] as project">
+    <div class="projectCard"
+         [ngClass]="{ 'specialBorder': activeProjectIndex === 3 }"
+         role="tabpanel"
+         [attr.id]="'project-panel-' + activeProjectIndex"
+         [attr.aria-labelledby]="'project-tab-d-' + activeProjectIndex + ' project-tab-m-' + activeProjectIndex"
+         *ngIf="projects[activeProjectIndex] as project">
       <div class="responsiveContent">
         <h2>{{ project.titleKeyWO | translate }}</h2>
         <p class="responsiveUsedSkills">
