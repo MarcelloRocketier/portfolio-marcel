@@ -40,8 +40,6 @@
 
     &.active,
     &[aria-selected="true"] {
-      min-width: 248px;
-      min-height: 97px;
       background: rgba(137, 188, 217, 0.07);
       color: rgba(248, 245, 236, 1);
     }
@@ -136,6 +134,7 @@
     height: 312px;
     border-radius: 8px;
     margin-bottom: 1.5rem;
+    display: block;
   }
 
   .projectDescription {
