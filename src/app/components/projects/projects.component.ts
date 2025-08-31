@@ -163,11 +163,6 @@ export class ProjectsComponent {
 
   activeProjectIndex = 0;
 
-  /**
-   * Sets the active project index to the given index.
-   *
-   * @param index - The index of the project to set as active.
-   */
   setActiveProject(index: number) {
     this.activeProjectIndex = index;
   }
