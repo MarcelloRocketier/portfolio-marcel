@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './language-switcher.component.html',
-  styleUrls: ['./language-switcher.component.scss'],
+  styleUrl: './language-switcher.component.scss',
 })
 export class LanguageSwitcherComponent {
   currentLang: string;
