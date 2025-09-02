@@ -1,28 +1,28 @@
-<section class="skillsSection" id="skills-desktop">
+<section class="skillsSection" id="skills-desktop" role="region" aria-labelledby="skills-mobile">
   <h1 id="skills-mobile" class="skillsTitle">{{ 'SKILLS.TITLE' | translate }}</h1>
   <div class="skillsSorting">
     <div class="skillsContainer">
       <div class="skillCard" *ngFor="let skill of skills">
-        <img [src]="skill.image" [alt]="skill.name" class="skillImage" />
+        <img [src]="skill.image" [alt]="skill.name" class="skillImage" loading="lazy" decoding="async" />
         <p class="skillName">{{ skill.name }}</p>
       </div>
     </div>
     <p class="responsiveLearningNow">{{ 'SKILLS.LEARNINGNOW' | translate }}</p>
     <div class="skillsLearning">
       <div class="shapeWrapperSkills">
-        <img class="shapeOneSkills" src="assets/img/otherSpecs/skillEllipseGrey.svg" alt="">
-        <img class="shapeTwoSkills" src="assets/img/otherSpecs/skillEllipseGreyHell.svg" alt="">
+        <img class="shapeOneSkills" src="assets/img/otherSpecs/skillEllipseGrey.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async">
+        <img class="shapeTwoSkills" src="assets/img/otherSpecs/skillEllipseGreyHell.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async">
       </div>
       <p class="learningNow">{{ 'SKILLS.LEARNINGNOW' | translate }}</p>
-      <img class="responsiveShape" src="assets/img/otherSpecs/skillEllipseGrey.svg" alt="">
+      <img class="responsiveShape" src="assets/img/otherSpecs/skillEllipseGrey.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async">
       <div class="learningIcons">
-        <img src="assets/img/skills/React.svg" alt="Icon 1" />
-        <img src="assets/img/skills/VueJs.svg" alt="Icon 2" />
+        <img src="assets/img/skills/React.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async" />
+        <img src="assets/img/skills/VueJs.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async" />
       </div>
       <p class="learningNext">{{ 'SKILLS.LEARNINGNEXT' | translate }}</p>
     </div>
     <div class="responsiveButtonContainer">
-      <button (click)="scrollToContact()" class="responsiveButton">{{ 'ABOUTME.LETSTALK' | translate }}</button>
+      <button type="button" (click)="scrollToContact()" class="responsiveButton">{{ 'ABOUTME.LETSTALK' | translate }}</button>
     </div>
   </div>
 </section>
