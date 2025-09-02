@@ -1,4 +1,4 @@
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 interface TextSegment {
@@ -10,7 +10,7 @@ interface TextSegment {
 @Component({
   selector: 'app-aboutme',
   standalone: true,
-  imports: [TranslateModule, CommonModule, NgOptimizedImage],
+  imports: [TranslateModule, CommonModule],
   templateUrl: './aboutme.component.html',
   styleUrl: './aboutme.component.scss',
 })
