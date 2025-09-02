@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -23,11 +22,11 @@ export class ContactComponent {
   showOverlay: boolean = false;
   overlayMessage: string = '';
 
-  constructor(private http: HttpClient, private translate: TranslateService) {}
+  constructor(private http: HttpClient) {}
 
   onSubmit(form: NgForm) {
     if (!this.privacyAccepted) {
-      this.triggerOverlay(this.translate.instant('CONTACT.ERROR_PRIVACY'));
+      this.triggerOverlay('CONTACT.ERROR_PRIVACY');
       return;
     }
 
@@ -39,11 +38,11 @@ export class ContactComponent {
 
     this.http.post('/portfolio/kontakt.php', payload).subscribe({
       next: () => {
-        this.triggerOverlay(this.translate.instant('CONTACT.SUCCESS'));
+        this.triggerOverlay('CONTACT.SUCCESS');
         form.resetForm();
       },
       error: () => {
-        this.triggerOverlay(this.translate.instant('CONTACT.ERROR'));
+        this.triggerOverlay('CONTACT.ERROR');
       },
     });
   }
