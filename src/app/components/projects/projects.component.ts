@@ -3,7 +3,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
 interface ResponsiveProject {
-  projectTitleKey: string;
+  titleKey: string;
 }
 
 interface Project {
@@ -30,16 +30,16 @@ interface Project {
 export class ProjectsComponent {
   responsiveProject: ResponsiveProject[] = [
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTONE',
+      titleKey: 'PROJECTS.RESPONSIVE.PROJECTONE',
     },
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTTWO',
+      titleKey: 'PROJECTS.RESPONSIVE.PROJECTTWO',
     },
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTTHREE',
+      titleKey: 'PROJECTS.RESPONSIVE.PROJECTTHREE',
     },
     {
-      projectTitleKey: 'PROJECTS.RESPONSIVE.PROJECTFOUR',
+      titleKey: 'PROJECTS.RESPONSIVE.PROJECTFOUR',
     },
   ];
   projects: Project[] = [

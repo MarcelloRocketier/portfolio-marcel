@@ -25,7 +25,7 @@
               [attr.aria-selected]="i === activeProjectIndex ? 'true' : 'false'"
               [attr.tabindex]="i === activeProjectIndex ? 0 : -1"
               [attr.aria-controls]="'project-panel-' + i">
-        {{ r.projectTitleKey | translate }}
+        {{ r.titleKey | translate }}
       </button>
     </div>
     <div class="projectCard"

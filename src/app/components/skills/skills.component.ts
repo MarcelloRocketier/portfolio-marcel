@@ -23,6 +23,11 @@ export class SkillsComponent {
     { name: 'Material Design', image: 'assets/img/skills/material-design.svg' },
   ];
 
+  learningSkills = [
+    { name: 'React', image: 'assets/img/skills/React.svg' },
+    { name: 'Vue.js', image: 'assets/img/skills/VueJs.svg' },
+  ];
+
   frontendSkills: string[] = [];
   backendSkills: string[] = [];
   tools: string[] = [];

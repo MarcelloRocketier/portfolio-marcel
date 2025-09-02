@@ -16,8 +16,7 @@
       <p class="learningNow">{{ 'SKILLS.LEARNINGNOW' | translate }}</p>
       <img class="responsiveShape" src="assets/img/otherSpecs/skillEllipseGrey.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async">
       <div class="learningIcons">
-        <img src="assets/img/skills/React.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async" />
-        <img src="assets/img/skills/VueJs.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async" />
+        <img *ngFor="let skill of learningSkills" [src]="skill.image" [alt]="skill.name" loading="lazy" decoding="async" />
       </div>
       <p class="learningNext">{{ 'SKILLS.LEARNINGNEXT' | translate }}</p>
     </div>
