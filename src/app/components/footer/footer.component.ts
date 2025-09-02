@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -18,5 +18,4 @@ export class FooterComponent {
 
   year = new Date().getFullYear();
 
-  constructor(public translate: TranslateService) {}
 }
