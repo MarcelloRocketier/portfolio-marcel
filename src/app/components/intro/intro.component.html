@@ -1,11 +1,11 @@
 <section class="intro">
     <div class="responsioveHeader">
         <div class="burgerMenu" (click)="isMenuOpen = !isMenuOpen">
-            <img src="assets/img/otherSpecs/burgerMenu.svg" alt="Burger Menu" />
+            <img src="assets/img/otherSpecs/burgerMenu.svg" alt="Burger Menu" loading="lazy" decoding="async" />
         </div>
         <div class="responsiveLogoMain">
             <a href="./index.html" target="_blank" rel="noopener noreferrer">
-                <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" />
+                <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" loading="lazy" decoding="async" />
             </a>
             <p class="nameSmall">M. Reyes</p>
             <p class="jobTitleSmall">developer</p>
@@ -33,19 +33,19 @@
     </div>
     <section class="left">
         <div class="shapeWrapper">
-            <img class="shapeOne" src="assets/img/otherSpecs/shape.svg" alt="">
-            <img class="shapeTwo" src="assets/img/otherSpecs/shape2.svg" alt="">
+            <img class="shapeOne" src="assets/img/otherSpecs/shape.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" role="presentation">
+            <img class="shapeTwo" src="assets/img/otherSpecs/shape2.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" role="presentation">
         </div>
         <div class="shapeWrapperTwo">
-            <img class="shapeThree" [class.hidden]="isMenuOpen" src="assets/img/otherSpecs/shape3.svg" alt="">
+            <img class="shapeThree" [class.hidden]="isMenuOpen" src="assets/img/otherSpecs/shape3.svg" alt="" loading="lazy" decoding="async" aria-hidden="true" role="presentation">
         </div>
-        <img class="profilePicture" [class.hidden]="isMenuOpen" src="assets/img/pictures/Ich_cutted.png" alt="">
+        <img class="profilePicture" [class.hidden]="isMenuOpen" src="assets/img/pictures/Ich_cutted.png" alt="" loading="lazy" decoding="async">
     </section>
     <section class="right">
         <div class="containerText">
             <div class="logoAndSocials">
                 <div class="logoMain">
-                    <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" />
+                    <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" loading="lazy" decoding="async" />
                     <p class="nameSmall">M. Reyes</p>
                     <p class="jobTitleSmall">developer</p>
                 </div>
@@ -53,18 +53,18 @@
                     <a href="mailto:marcelreyeslangenhorst@gmail.com.contact?subject=Kontakt%20über%20Portfolio&body=Hallo%20Marcel%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
                         (mouseenter)="isHoveredMail = true" (mouseleave)="isHoveredMail = false">
                         <img [src]="isHoveredMail ? 'assets/img/otherSpecs/mailHover.svg' : 'assets/img/otherSpecs/mail.svg'"
-                            width="30" height="30" alt="Mail Logo" />
+                            width="30" height="30" alt="Mail Logo" loading="lazy" decoding="async" />
                     </a>
                     <a href="https://www.linkedin.com/in/marcel-reyes-langenhorst-56b3022a7/" target="_blank"
                         rel="noopener noreferrer" (mouseenter)="isHoveredLinkedin = true"
                         (mouseleave)="isHoveredLinkedin = false">
                         <img [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/linkedinHover.svg' : 'assets/img/otherSpecs/linkedin.svg'"
-                            width="30" height="30" alt="LinkedIn Logo" />
+                            width="30" height="30" alt="LinkedIn Logo" loading="lazy" decoding="async" />
                     </a>
                     <a href="https://github.com/MarcelloRocketier" target="_blank" rel="noopener noreferrer"
                         (mouseenter)="isHoveredGitHub = true" (mouseleave)="isHoveredGitHub = false">
                         <img [src]="isHoveredGitHub ? 'assets/img/otherSpecs/githubHover.svg' : 'assets/img/otherSpecs/github.svg'"
-                            width="30" height="30" alt="GitHub Logo" />
+                            width="30" height="30" alt="GitHub Logo" loading="lazy" decoding="async" />
                     </a>
                 </div>
             </div>
@@ -74,7 +74,7 @@
         <div class="cta">
             <a class="cta-button" href="#contact-desktop">
                 <img [src]="isHovered ? 'assets/img/otherSpecs/ArrowDownHover.svg' : 'assets/img/otherSpecs/Arrowdown.svg'"
-                    (mouseenter)="isHovered = true" (mouseleave)="isHovered = false" alt="Scroll down arrow" />
+                    (mouseenter)="isHovered = true" (mouseleave)="isHovered = false" alt="Scroll down arrow" loading="lazy" decoding="async" />
             </a>
         </div>
     </section>
