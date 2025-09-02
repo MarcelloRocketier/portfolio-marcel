@@ -54,13 +54,13 @@
           </p>
         </ng-container>
         <div class="responsiveProjectLinks">
-          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" rel="noopener noreferrer" class="buttonStyle live">
+          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" rel="noopener noreferrer" class="buttonStyle live" role="button" aria-label="Live Test link">
             Live Test
           </a>
           <ng-template #noLiveRight>
             <span class="buttonStyle placeholder">Kommt bald</span>
           </ng-template>
-          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" rel="noopener noreferrer" class="buttonStyle github">
+          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" rel="noopener noreferrer" class="buttonStyle github" role="button" aria-label="GitHub repository link">
             GitHub
           </a>
           <ng-template #noRepoRight>
@@ -89,13 +89,13 @@
         </div>
         <img [src]="project.image" class="projectImage" [alt]="project.titleKey | translate" loading="lazy" decoding="async" />
         <div class="projectLinks">
-          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" rel="noopener noreferrer" class="buttonStyle live">
+          <a *ngIf="project.link; else noLiveRight" [href]="project.link" target="_blank" rel="noopener noreferrer" class="buttonStyle live" role="button" aria-label="Live Test link">
             Live Test
           </a>
           <ng-template #noLiveRight>
             <span class="placeholder-link fullButton">Kommt bald</span>
           </ng-template>
-          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" rel="noopener noreferrer" class="buttonStyle github">
+          <a *ngIf="project.repo; else noRepoRight" [href]="project.repo" target="_blank" rel="noopener noreferrer" class="buttonStyle github" role="button" aria-label="GitHub repository link">
             GitHub
           </a>
           <ng-template #noRepoRight>

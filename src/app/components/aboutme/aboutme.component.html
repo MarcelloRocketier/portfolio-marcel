@@ -5,7 +5,7 @@
     <div class="locationContainer">
         <div>
             <div class="typingBox">
-                <img [src]="currentIcon" alt="Icon" class="typingIcon" />
+                <img [src]="currentIcon" alt="Icon" class="typingIcon" loading="lazy" decoding="async" />
                 <p class="typingText">
                     <ng-container *ngFor="let segment of currentSegments">
                         <span [style.color]="segment.color">
@@ -17,7 +17,7 @@
         </div>
         <div class="descriptionContainer">
             <p class="description">{{ 'ABOUTME.DESCRIPTION' | translate }}</p>
-            <button (click)="scrollToContact()" class="descriptionButton">{{ 'ABOUTME.LETSTALK' | translate }}</button>
+            <button type="button" (click)="scrollToContact()" class="descriptionButton">{{ 'ABOUTME.LETSTALK' | translate }}</button>
         </div>
     </div>
 </section>
