@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { NgForm } from '@angular/forms';
@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule, RouterModule],
+  imports: [CommonModule, FormsModule, TranslateModule, RouterModule, HttpClientModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
