@@ -48,6 +48,11 @@
   &.de::before {
     left: 50%;
   }
+
+  &:focus {
+    outline: 2px solid #262e34;
+    outline-offset: 2px;
+  }
 }
 
 @import "./language-switcher.component.media-queries.scss";
