@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
 
 @Component({
@@ -9,7 +9,6 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
   imports: [
     CommonModule,
     TranslateModule,
-    NgOptimizedImage,
     LanguageSwitcherComponent,
   ],
   templateUrl: './navbar.component.html',
