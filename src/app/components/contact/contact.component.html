@@ -46,6 +46,7 @@
               [class.invalid]="nameInput.invalid && nameInput.touched"
               [attr.aria-describedby]="'nameLabel'"
               [attr.aria-invalid]="nameInput.invalid ? 'true' : null"
+              [attr.aria-required]="'true'"
             />
           </label>
           <label class="email" id="emailLabel" for="email" [class.label-error]="emailInput.invalid && emailInput.touched">
@@ -69,6 +70,7 @@
               [class.invalid]="emailInput.invalid && emailInput.touched"
               [attr.aria-describedby]="'emailLabel'"
               [attr.aria-invalid]="emailInput.invalid ? 'true' : null"
+              [attr.aria-required]="'true'"
             />
           </label>
         </div>
@@ -97,6 +99,7 @@
               [class.invalid]="(messageInput.errors?.['minlength'] && messageInput.touched) || (messageInput.errors?.['required'] && (messageInput.dirty || messageInput.touched))"
               [attr.aria-describedby]="'messageLabel'"
               [attr.aria-invalid]="(messageInput.errors?.['minlength'] || messageInput.errors?.['required']) ? 'true' : null"
+              [attr.aria-required]="'true'"
             ></textarea>
           </label>
           <label class="privacyContainer" id="privacyLabel" for="privacyAccepted" [class.label-error]="privacy.invalid && privacy.touched">
@@ -110,6 +113,7 @@
               #privacy="ngModel"
               [attr.aria-describedby]="'privacyLabel'"
               [attr.aria-invalid]="privacy.invalid ? 'true' : null"
+              [attr.aria-required]="'true'"
             />
             <span class="customCheckbox"></span>
             <p class="privacyText">
@@ -120,7 +124,7 @@
               {{ 'CONTACT.PRIVACY_PART3' | translate }}
             </p>
           </label>
-          <div class="error">
+          <div class="error" aria-live="polite" role="alert">
             <span *ngIf="privacy.invalid && privacy.dirty">
               {{ 'CONTACT.ERROR_PRIVACY' | translate }}
             </span>
