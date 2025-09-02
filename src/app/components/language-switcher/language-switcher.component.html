@@ -1,4 +1,4 @@
-<div [ngClass]="toggleClass" (click)="toggleLanguage()">
+<div [ngClass]="toggleClass" (click)="toggleLanguage()" role="button" aria-label="Toggle language">
     <span [class.active]="currentLang === 'en'">EN</span>
     <span [class.active]="currentLang === 'de'">DE</span>
 </div>
