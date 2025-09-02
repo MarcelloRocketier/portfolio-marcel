@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -32,21 +32,7 @@ export class SkillsComponent {
   backendSkills: string[] = [];
   tools: string[] = [];
 
-  /**
-   * Initializes the SkillsComponent by subscribing to translation keys for frontend,
-   * backend, and tools skills, and assigns the translated values to their respective arrays.
-   *
-   * @param translate - Service for handling translation and localization.
-   */
-  constructor(private translate: TranslateService) {
-    this.translate
-      .get('SKILLS.FRONTEND')
-      .subscribe((data) => (this.frontendSkills = data));
-    this.translate
-      .get('SKILLS.BACKEND')
-      .subscribe((data) => (this.backendSkills = data));
-    this.translate.get('SKILLS.TOOLS').subscribe((data) => (this.tools = data));
-  }
+  constructor() {}
 
   scrollToContact() {
     const isMobile = window.innerWidth <= 850;
