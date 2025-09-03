@@ -38,14 +38,13 @@
 
     .profilePicture {
       position: absolute;
-      bottom: 0;                 /* keep anchored to the bottom edge of the left panel */
-      left: 50%;                 /* center horizontally within the left panel */
+      bottom: 0;
+      left: 50%;
       transform: translateX(-50%);
-      width: clamp(320px, 46vw, 560px);  /* prevent oversizing on very wide screens */
-      max-width: 100%;           /* never exceed the container */
+      width: clamp(320px, 46vw, 560px);
+      max-width: 100%;
       height: auto;
-      min-height: unset;
-      object-fit: contain;       /* avoid cropping of the head/shoulders */
+      object-fit: contain;
       object-position: bottom center;
       z-index: 3;
       transition: opacity 0.3s ease;
