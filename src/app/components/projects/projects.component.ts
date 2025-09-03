@@ -76,7 +76,7 @@ export class ProjectsComponent {
       titleKey: 'PROJECTS.PROJECTTWO.TITLE',
       titleKeyWO: 'PROJECTS.PROJECTTWO.TITLEWO',
       duration: 'PROJECTS.PROJECTTWO.DURATION',
-      image: 'assets/img/projects/ElPolloLoco.png',
+      image: 'assets/img/projects/Mesa de trabajo 1.png',
       descriptionHeadlineKeys: [
         'PROJECTS.PROJECTTWO.DESCRIPTIONS.DESCRIPTIONONE.HEADLINE',
         'PROJECTS.PROJECTTWO.DESCRIPTIONS.DESCRIPTIONTWO.HEADLINE',
