@@ -68,7 +68,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
 
         <h2>{{ 'PRIVACY.SECTIONS.RESPONSIBLE' | translate }}</h2>
         <p>
-          Marcel Reyes<br />
+          Marcel Reyes Langenhorst<br />
           E-Mail:
           <a href="mailto:marcelreyeslangenhorst@gmail.com.contact">marcelreyeslangenhorst&#64;gmail.com</a>
         </p>
