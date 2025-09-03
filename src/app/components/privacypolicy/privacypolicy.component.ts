@@ -34,7 +34,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
                   />
                 </a>
                 <p class="nameSmall">M. Reyes</p>
-                <p class="jobTitleSmall">developer</p>
+                <p class="jobTitleSmall">Frontend Developer</p>
               </div>
               <li>
                 <a
