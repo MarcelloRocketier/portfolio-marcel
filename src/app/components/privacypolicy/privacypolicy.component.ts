@@ -141,7 +141,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
     </div>
     <app-footer></app-footer>
   `,
-  styleUrls: ['./privacypolicy.component.scss'],
+  styleUrl: './privacypolicy.component.scss',
 })
 export class PrivacyPolicyComponent {
   ngOnInit(): void {
