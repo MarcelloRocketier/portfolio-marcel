@@ -68,7 +68,7 @@ import { FooterComponent } from '../footer/footer.component';
         <p>
           Marcel Reyes Langenhorst<br />
           E-Mail:
-          <a href="mailto:marcelreyeslangenhorst@gmail.com.contact">marcelreyeslangenhorst&#64;gmail.com</a>
+          <a href="mailto:marcelreyeslangenhorst@gmail.com">marcelreyeslangenhorst&#64;gmail.com</a>
         </p>
         <h2>{{ 'PRIVACY.SECTIONS.DATA_COLLECTION' | translate }}</h2>
         <p>{{ 'PRIVACY.DATA_COLLECTION_TEXT_1' | translate }}</p>
@@ -100,13 +100,13 @@ import { FooterComponent } from '../footer/footer.component';
         </ul>
         <p>
           {{ 'PRIVACY.RIGHTS_CONTACT' | translate }}
-          <a href="mailto:marcelreyeslangenhorst@gmail.com">marcelreyeslangenhorst&#64;gmail.com.contact</a>
+          <a href="mailto:marcelreyeslangenhorst@gmail.com">marcelreyeslangenhorst&#64;gmail.com</a>
         </p>
 
         <h2>{{ 'PRIVACY.SECTIONS.REVOCATION' | translate }}</h2>
         <p>
           {{ 'PRIVACY.REVOCATION_TEXT' | translate }}
-          <a href="mailto:marcelreyeslangenhorst@gmail.com.contact">marcelreyeslangenhorst&#64;gmail.com.contact</a>
+          <a href="mailto:marcelreyeslangenhorst@gmail.com">marcelreyeslangenhorst&#64;gmail.com</a>
         </p>
 
         <h2>{{ 'PRIVACY.SECTIONS.SECURITY' | translate }}</h2>
@@ -124,7 +124,7 @@ import { FooterComponent } from '../footer/footer.component';
           Parallelweg 67<br />
           59269 Beckum<br />
           E-Mail:
-          <a href="mailto:marcelreyeslangenhorst@gmail.com.contact">marcelreyeslangenhorst&#64;gmail.com.contact</a><br />
+          <a href="mailto:marcelreyeslangenhorst@gmail.com">marcelreyeslangenhorst&#64;gmail.com</a><br />
         </p>
 
         <h2>{{ 'LEGAL.DISCLAIMER_TITLE' | translate }}</h2>
