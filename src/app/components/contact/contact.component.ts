@@ -29,6 +29,7 @@ export class ContactComponent {
       this.triggerOverlay('CONTACT.ERROR_PRIVACY');
       return;
     }
+    if (form.invalid) { return; }
 
     const payload = {
       name: this.name,
@@ -36,10 +37,11 @@ export class ContactComponent {
       message: this.message,
     };
 
-    this.http.post('/portfolio/kontakt.php', payload).subscribe({
+    this.http.post('https://marcelreyeslangenhorst.de/kontakt.php', payload).subscribe({
       next: () => {
         this.triggerOverlay('CONTACT.SUCCESS');
         form.resetForm();
+        this.privacyAccepted = false;
       },
       error: () => {
         this.triggerOverlay('CONTACT.ERROR');
