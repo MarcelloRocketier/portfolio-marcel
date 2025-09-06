@@ -37,7 +37,7 @@ export class ContactComponent {
       message: this.message,
     };
 
-    this.http.post('https://marcelreyeslangenhorst.de/kontakt.php', payload).subscribe({
+    this.http.post('/kontakt.php', payload).subscribe({
       next: () => {
         this.triggerOverlay('CONTACT.SUCCESS');
         form.resetForm();
