@@ -4,7 +4,6 @@ import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
 import { Router } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
-import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
   selector: 'app-privacy-policy',
@@ -14,7 +13,6 @@ import { NavbarComponent } from '../navbar/navbar.component';
     TranslateModule,
     LanguageSwitcherComponent,
     FooterComponent,
-    NavbarComponent,
   ],
   template: `
     <div class="privacyScrollWrapper">
@@ -143,7 +141,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
   `,
   styleUrl: './privacypolicy.component.scss',
 })
-export class PrivacyPolicyComponent {
+export class PrivacyPolicyComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     document.body.classList.add('privacy-mode');
   }
