@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -6,12 +7,13 @@ import { RevealDirective } from './directives/reveal.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RevealDirective  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RevealDirective
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
