@@ -1,8 +1,8 @@
 <section class="skillsSection" id="skills-desktop" role="region" aria-labelledby="skills-mobile">
-  <h1 id="skills-mobile" class="skillsTitle reveal is-inview">{{ 'SKILLS.TITLE' | translate }}</h1>
+  <h1 id="skills-mobile" class="skillsTitle reveal" appReveal>{{ 'SKILLS.TITLE' | translate }}</h1>
   <div class="skillsSorting">
     <div class="skillsContainer">
-      <div class="skillCard reveal is-inview" *ngFor="let skill of skills">
+      <div class="skillCard reveal" appReveal *ngFor="let skill of skills">
         <img [src]="skill.image" [alt]="skill.name" class="skillImage" loading="lazy" decoding="async" />
         <p class="skillName">{{ skill.name }}</p>
       </div>
