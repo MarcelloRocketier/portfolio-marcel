@@ -6,12 +6,12 @@ import { RevealDirective } from './directives/reveal.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    RevealDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RevealDirective
   ],
   providers: [],
   bootstrap: [AppComponent]
