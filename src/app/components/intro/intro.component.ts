@@ -1,4 +1,3 @@
-import { RevealDirective } from '../../directives/reveal.directive';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
@@ -11,7 +10,6 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
     TranslateModule,
     CommonModule,
     LanguageSwitcherComponent,
-    RevealDirective,
   ],
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss'],
