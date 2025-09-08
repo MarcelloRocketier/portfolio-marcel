@@ -5,6 +5,15 @@
   display: block;
   background-color: rgb(38, 46, 52);
   min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* prevent invisible text in WebKit within privacypolicy scope */
+* {
+  -webkit-text-fill-color: currentColor;
 }
 
 html,
@@ -171,6 +180,7 @@ app-footer {
   li {
     color: rgb(255, 255, 255);
     font-size: 1rem;
+    font-family: "Josefin Sans", var(--font-sans, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif);
     line-height: 1.6;
   }
 }

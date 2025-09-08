@@ -2,6 +2,15 @@
   display: block;
   background-color: rgb(137, 188, 255);;
   padding: 0 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* prevent invisible text in WebKit within footer scope */
+* {
+  -webkit-text-fill-color: currentColor;
 }
 
 .footerWrapper {
@@ -32,7 +41,7 @@
     gap: 0.5rem;
 
     p {
-      font-family: Josefin Sans;
+      font-family: "Josefin Sans", var(--font-sans, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif);
       font-weight: 400;
       font-size: 18px;
       line-height: 120%;
@@ -42,6 +51,7 @@
       margin: 0 0.5rem;
       color: inherit;
       text-decoration: none;
+      cursor: pointer;
 
       &:hover {
         text-decoration: none;
