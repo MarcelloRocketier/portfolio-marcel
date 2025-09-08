@@ -34,13 +34,7 @@ export class ProjectsComponent {
     },
     {
       titleKey: 'PROJECTS.RESPONSIVE.PROJECTTWO',
-    },
-    {
-      titleKey: 'PROJECTS.RESPONSIVE.PROJECTTHREE',
-    },
-    {
-      titleKey: 'PROJECTS.RESPONSIVE.PROJECTFOUR',
-    },
+    }
   ];
   projects: Project[] = [
     {
@@ -100,64 +94,6 @@ export class ProjectsComponent {
       ],
       link: 'https://sharkie.marcelreyeslangenhorst.de',
       repo: 'https://github.com/MarcelloRocketier/Sharkie',
-    },
-    {
-      titleKey: 'PROJECTS.PROJECTTHREE.TITLE',
-      titleKeyWO: 'PROJECTS.PROJECTTHREE.TITLEWO',
-      duration: 'PROJECTS.PROJECTTHREE.DURATION',
-      image: 'assets/img/projects/comingsoon.jpg',
-      descriptionHeadlineKeys: [
-        'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONONE.HEADLINE',
-        'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONTWO.HEADLINE',
-        'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONTHREE.HEADLINE',
-      ],
-      descriptionKeys: [
-        'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONONE.TEXT',
-        'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONTWO.TEXT',
-        'PROJECTS.PROJECTTHREE.DESCRIPTIONS.DESCRIPTIONTHREE.TEXT',
-      ],
-      usedSkillHeadline: 'PROJECTS.PROJECTTHREE.SKILLHEADLINE',
-      usedSkillKeys: [
-        'PROJECTS.PROJECTTHREE.SKILLONE',
-        'PROJECTS.PROJECTTHREE.SKILLTWO',
-        'PROJECTS.PROJECTTHREE.SKILLTHREE',
-      ],
-      usedSkillNameKeys: [
-        'PROJECTS.PROJECTTHREE.SKILLONENAME',
-        'PROJECTS.PROJECTTHREE.SKILLTWOENAME',
-        'PROJECTS.PROJECTTHREE.SKILLTHREEENAME',
-      ],
-      link: '',
-      repo: '',
-    },
-    {
-      titleKey: 'PROJECTS.PROJECTFOUR.TITLE',
-      titleKeyWO: 'PROJECTS.PROJECTFOUR.TITLEWO',
-      duration: 'PROJECTS.PROJECTFOUR.DURATION',
-      image: 'assets/img/projects/comingsoon.jpg',
-      descriptionHeadlineKeys: [
-        'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONONE.HEADLINE',
-        'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONTWO.HEADLINE',
-        'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONTHREE.HEADLINE',
-      ],
-      descriptionKeys: [
-        'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONONE.TEXT',
-        'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONTWO.TEXT',
-        'PROJECTS.PROJECTFOUR.DESCRIPTIONS.DESCRIPTIONTHREE.TEXT',
-      ],
-      usedSkillHeadline: 'PROJECTS.PROJECTFOUR.SKILLHEADLINE',
-      usedSkillKeys: [
-        'PROJECTS.PROJECTFOUR.SKILLONE',
-        'PROJECTS.PROJECTFOUR.SKILLTWO',
-        'PROJECTS.PROJECTFOUR.SKILLTHREE',
-      ],
-      usedSkillNameKeys: [
-        'PROJECTS.PROJECTFOUR.SKILLONENAME',
-        'PROJECTS.PROJECTFOUR.SKILLTWOENAME',
-        'PROJECTS.PROJECTFOUR.SKILLTHREEENAME',
-      ],
-      link: '',
-      repo: '',
     },
   ];
 
