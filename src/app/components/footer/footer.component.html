@@ -1,7 +1,7 @@
 <footer>
   <section class="footerWrapper mainFooter">
     <nav>
-      <a class="privacy" href="https://marcelreyeslangenhorst.de/privacy" target="_blank" rel="noopener noreferrer">
+      <a class="privacy" routerLink="/rechtliche-hinweise" routerLinkActive="active">
         {{ 'FOOTER.PRIVACY' | translate }}
       </a>
       <p>{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
@@ -55,7 +55,7 @@
       </a>
     </div>
     <nav class="responsiveNav">
-      <a class="privacy" href="https://marcelreyeslangenhorst.de/privacy" target="_blank" rel="noopener noreferrer">
+      <a class="privacy" routerLink="/rechtliche-hinweise" routerLinkActive="active">
         {{ 'FOOTER.PRIVACY' | translate }}
       </a>
       <p class="copyright">{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
