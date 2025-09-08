@@ -21,7 +21,7 @@ import { FooterComponent } from '../footer/footer.component';
             <ul class="nav-links">
               <div class="logoMain">
                 <a
-                  href="https://marcel-reyes-langen.developerakademie.net/index.html"
+                  href="https://marcelreyeslangenhorst.de/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="logo"
