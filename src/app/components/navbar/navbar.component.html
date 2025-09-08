@@ -2,8 +2,7 @@
     <section>
         <ul class="nav-links">
             <div class="logoMain">
-                <a href="https://marcelreyeslangenhorst.de/" target="_blank" rel="noopener noreferrer"
-                    class="logo">
+                <a routerLink="/" class="logo">
                     <img src="./assets/img/logo/LogoIconBlack.svg" alt="Marcel Reyes L. Logo" loading="lazy" decoding="async" />
                 </a>
                 <p class="nameSmall">M. Reyes</p>
@@ -21,6 +20,8 @@
             <li><a href="#contact-desktop" [ngClass]="{'active': activeLink === 'contact'}"
                     (click)="setActive('contact')">{{
                     'NAV.CONTACT' | translate }}</a></li>
+            <li><a routerLink="/impressum" routerLinkActive="active">Impressum</a></li>
+            <li><a routerLink="/rechtliche-hinweise" routerLinkActive="active">Rechtliche Hinweise</a></li>
             <app-language-switcher></app-language-switcher>
         </ul>
     </section>
