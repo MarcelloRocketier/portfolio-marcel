@@ -5,12 +5,11 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { NgForm } from '@angular/forms';
-import { RevealDirective } from '../../directives/reveal.directive';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule, RouterModule, HttpClientModule, RevealDirective],
+  imports: [CommonModule, FormsModule, TranslateModule, RouterModule, HttpClientModule],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
 })
