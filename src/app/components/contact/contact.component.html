@@ -1,13 +1,13 @@
 <section class="contactsSection" id="contact-desktop">
   <div class="contactsWrapper">
     <div class="contactsTitleWrapper">
-      <h2 id="contact-mobile" class="contactsTitle">{{ 'CONTACT.TITLE' | translate }}</h2>
+      <h2 id="contact-mobile" class="contactsTitle reveal is-inview">{{ 'CONTACT.TITLE' | translate }}</h2>
       <button type="button" class="scrollTopButton" (click)="scrollToTop()" aria-label="Nach oben scrollen"></button>
     </div>
     <div class="contentUp">
-      <div class="contactDescriptionContainer">
+      <div class="contactDescriptionContainer reveal is-inview">
         <p class="contactDescription"> {{ 'CONTACT.DESCRIPTION' | translate }} </p>
-        <div class="contactInfo">
+        <div class="contactInfo reveal is-inview">
           <div class="contactEmail">
             <span class="iconEmail"></span>
             Mail: <a href="mailto:marcelreyeslangenhorst@gmail.com">marcelreyeslangenhorst&#64;&#8203;gmail.com</a>
@@ -20,10 +20,10 @@
       </div>
     </div>
     <div class="contentMiddle">
-      <p>{{ 'CONTACT.LETSTALK' | translate }}</p>
+      <p class="reveal is-inview">{{ 'CONTACT.LETSTALK' | translate }}</p>
     </div>
     <div class="contentDown">
-      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contactForm">
+      <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" class="contactForm reveal is-inview">
         <div class="nameAndEmail">
           <label class="name" id="nameLabel" for="name" [class.label-error]="nameInput.invalid && nameInput.touched">
             {{
