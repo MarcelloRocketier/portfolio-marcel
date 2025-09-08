@@ -26,7 +26,7 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-button {
+button, .btn {
   cursor: pointer;
 }
 
@@ -99,7 +99,8 @@ a, button, .btn {
     opacity var(--anim-hover) ease,
     background-color var(--anim-hover) ease,
     color var(--anim-hover) ease,
-    box-shadow var(--anim-hover) ease;
+    box-shadow var(--anim-hover) ease,
+    border-color var(--anim-hover) ease;
 }
 a:hover, button:hover, .btn:hover {
   transform: translateY(-1px);
