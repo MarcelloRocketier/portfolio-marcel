@@ -7,12 +7,23 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  // border: 0.1px solid red;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+}
+
+:root {
+  --font-sans: "Josefin Sans", "Anta", "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
 }
 
 button {
