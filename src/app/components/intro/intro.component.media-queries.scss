@@ -272,3 +272,15 @@
     }
   }
 }
+
+@media (max-width: 380px) {
+  .contact {
+    .contact-info {
+      a,
+      span {
+        word-break: break-all;
+        overflow-wrap: anywhere;
+      }
+    }
+  }
+}

@@ -29,3 +29,41 @@ html, body {
 button {
   cursor: pointer;
 }
+
+/* ==============================
+   Mobile safety guards (<=360px)
+   ============================== */
+html, body {
+  overflow-x: hidden; /* prevent horizontal scroll on tiny screens */
+}
+
+img, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensure flex/grid children can shrink instead of causing overflow */
+.flex, [class*="row"], [class*="grid"] > * {
+  min-width: 0;
+}
+
+@media (max-width: 360px) {
+  /* slightly reduce base sizes to avoid overflows */
+  :root { font-size: 15px; }
+
+  h1 { font-size: clamp(1.4rem, 6vw, 1.75rem); }
+  h2 { font-size: clamp(1.2rem, 5.5vw, 1.5rem); }
+
+  /* generic horizontal padding guard for sections */
+  .section, section { padding-left: 16px; padding-right: 16px; }
+
+  /* more compact buttons on very small screens */
+  button, .btn { padding: 10px 14px; }
+
+  /* inputs should never overflow */
+  input, textarea, select { max-width: 100%; }
+}
