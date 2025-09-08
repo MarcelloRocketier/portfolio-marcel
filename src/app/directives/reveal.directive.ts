@@ -1,8 +1,7 @@
 import { Directive, ElementRef, OnDestroy, OnInit } from '@angular/core';
 
 @Directive({
-  selector: '[appReveal]',
-  standalone: true
+  selector: '[appReveal]'
 })
 export class RevealDirective implements OnInit, OnDestroy {
   private observer?: IntersectionObserver;
