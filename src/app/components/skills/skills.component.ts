@@ -1,3 +1,4 @@
+import { RevealDirective } from '../../directives/reveal.directive';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -5,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RevealDirective],
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
