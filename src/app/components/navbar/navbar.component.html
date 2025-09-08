@@ -20,6 +20,12 @@
             <li><a href="#contact-desktop" [ngClass]="{'active': activeLink === 'contact'}"
                     (click)="setActive('contact')">{{
                     'NAV.CONTACT' | translate }}</a></li>
+            <li>
+              <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
+            </li>
+            <li>
+              <a routerLink="/rechtliche-hinweise" routerLinkActive="active">Rechtliche Hinweise</a>
+            </li>
             <app-language-switcher></app-language-switcher>
         </ul>
     </section>
