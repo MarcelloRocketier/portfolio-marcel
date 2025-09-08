@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RevealDirective } from '../../directives/reveal.directive';
 interface TextSegment {
   textKey: string;
   color: string;
@@ -10,7 +11,7 @@ interface TextSegment {
 @Component({
   selector: 'app-aboutme',
   standalone: true,
-  imports: [TranslateModule, CommonModule],
+  imports: [TranslateModule, CommonModule, RevealDirective],
   templateUrl: './aboutme.component.html',
   styleUrl: './aboutme.component.scss',
 })
