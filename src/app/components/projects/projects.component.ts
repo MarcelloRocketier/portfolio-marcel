@@ -69,7 +69,7 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTONE.SKILLTWOENAME',
         'PROJECTS.PROJECTONE.SKILLTHREEENAME',
       ],
-      link: 'https://www.placeholder.de/projects/Join/html/login.html',
+      link: 'https://join.marcelreyeslangenhorst.de/',
       repo: 'https://github.com/MarcelloRocketier/Join',
     },
     {
@@ -98,7 +98,7 @@ export class ProjectsComponent {
         'PROJECTS.PROJECTTWO.SKILLTWOENAME',
         'PROJECTS.PROJECTTWO.SKILLTHREEENAME',
       ],
-      link: 'https://www.placeholder.de/projects/Sharkie/index.html',
+      link: 'https://sharkie.marcelreyeslangenhorst.de',
       repo: 'https://github.com/MarcelloRocketier/Sharkie',
     },
     {
