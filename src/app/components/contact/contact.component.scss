@@ -359,4 +359,22 @@
   }
 }
 
+.nameInput:-webkit-autofill,
+.emailInput:-webkit-autofill,
+.messageInput:-webkit-autofill {
+  -webkit-text-fill-color: rgba(137, 188, 217, 1) !important;
+  caret-color: rgba(137, 188, 217, 1);
+  box-shadow: 0 0 0 1000px rgb(38, 46, 52) inset !important; /* keep bg consistent */
+  transition: background-color 9999s ease-in-out 0s !important; /* neutralize yellow */
+}
+
+a,
+button,
+.contactInfo .contactEmail,
+.contactInfo .contactPhone,
+.customCheckbox,
+.sendButton {
+  cursor: pointer;
+}
+
 @import "contact.component.media-queries";
