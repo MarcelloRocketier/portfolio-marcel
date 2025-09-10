@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -32,7 +33,7 @@ export class IntroComponent {
   isHoveredGitHub: boolean = false;
   isMenuOpen: boolean = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   /**
    * Handles the click event for the navigation links. Prevents the default event
@@ -58,5 +59,9 @@ export class IntroComponent {
       .querySelector(`#${targetId}`)
       ?.scrollIntoView({ behavior: 'smooth' });
   }, 50);
+}
+
+navigateHome(): void {
+  this.router.navigateByUrl('/');
 }
 }

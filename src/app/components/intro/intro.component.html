@@ -4,7 +4,7 @@
             <img src="assets/img/otherSpecs/burgerMenu.svg" alt="Burger Menu" loading="lazy" decoding="async" />
         </div>
         <div class="responsiveLogoMain">
-            <a href="./index.html" target="_blank" rel="noopener noreferrer">
+            <a class="logo" routerLink="/">
                 <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" loading="lazy" decoding="async" />
             </a>
             <p class="nameSmall">M. Reyes</p>
@@ -45,7 +45,9 @@
         <div class="containerText">
             <div class="logoAndSocials">
                 <div class="logoMain">
-                    <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" loading="lazy" decoding="async" />
+                    <a class="logo" (click)="$event.preventDefault(); navigateHome()">
+                        <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" loading="lazy" decoding="async" />
+                    </a>
                     <p class="nameSmall">M. Reyes</p>
                     <p class="jobTitleSmall">Frontend Developer</p>
                 </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
@@ -24,5 +25,17 @@ export class NavbarComponent {
    */
   setActive(link: string) {
     this.activeLink = link;
+  }
+
+  constructor(private router: Router) {}
+
+  navigateHome(): void {
+    this.router.navigateByUrl('/');
+  }
+
+  onLogoClick(event: Event): void {
+    event.preventDefault();
+    event.stopPropagation();
+    this.router.navigateByUrl('/');
   }
 }
