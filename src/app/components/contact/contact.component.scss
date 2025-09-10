@@ -233,6 +233,7 @@
 
 .privacyContainer {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -267,8 +268,9 @@
   font-family: Josefin Sans;
   font-weight: 400;
   font-size: 14px;
-  line-height: 120%;
+  line-height: 1.4;
   color: rgba(248, 245, 236, 1);
+  margin: 0;
   .blueText {
     color: rgba(137, 188, 217, 1);
     a {
@@ -378,3 +380,7 @@ button,
 }
 
 @import "contact.component.media-queries";
+
+.validationMessage {
+  margin-top: 6px;
+}
