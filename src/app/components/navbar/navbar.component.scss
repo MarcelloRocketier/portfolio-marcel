@@ -71,15 +71,15 @@
       font-family: Josefin Sans;
       font-weight: 500;
       font-size: 26px;
-      width: 150px;
       height: 55px;
       color: #262e34;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       padding-top: 2px;
-      line-height: 55px;
+      line-height: 1.2;
 
       &.active {
         color: #f8f5ec;
