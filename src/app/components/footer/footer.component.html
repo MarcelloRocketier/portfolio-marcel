@@ -4,9 +4,12 @@
       <a class="privacy" routerLink="/rechtliche-hinweise" routerLinkActive="active">
         {{ 'FOOTER.PRIVACY' | translate }}
       </a>
+      <a class="privacy" routerLink="/impressum" routerLinkActive="active">
+        Impressum
+      </a>
       <p>{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
     </nav>
-    <a href="https://marcelreyeslangenhorst.de/" target="_blank" rel="noopener noreferrer" class="logo">
+    <a routerLink="/" class="logo">
        <img src="./assets/img/logo/LogoIconBlack.svg" alt="Marcel Reyes Logo" loading="lazy" decoding="async" />
     </a>
     <div class="socials">
@@ -31,7 +34,7 @@
     </div>
   </section>
   <section class="responsiveFooterWrapper responsiveFooter"> 
-    <a href="https://marcelreyeslangenhorst.de/" target="_blank" rel="noopener noreferrer" class="logo">
+    <a routerLink="/" class="logo">
       <img src="assets/img/logo/LogoFooter.svg" alt="" loading="lazy" decoding="async">
     </a>
     <div class="socials">
@@ -57,6 +60,9 @@
     <nav class="responsiveNav">
       <a class="privacy" routerLink="/rechtliche-hinweise" routerLinkActive="active">
         {{ 'FOOTER.PRIVACY' | translate }}
+      </a>
+      <a class="privacy" routerLink="/impressum" routerLinkActive="active">
+        Impressum
       </a>
       <p class="copyright">{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
     </nav>

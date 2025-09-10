@@ -71,7 +71,6 @@
       font-family: Josefin Sans;
       font-weight: 500;
       font-size: 26px;
-      line-height: 120%;
       width: 150px;
       height: 55px;
       color: #262e34;
@@ -79,6 +78,8 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
+      padding-top: 2px;
+      line-height: 55px;
 
       &.active {
         color: #f8f5ec;
