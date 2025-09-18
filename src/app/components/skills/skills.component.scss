@@ -158,3 +158,17 @@
   }
 }
 @import "./skills.component.media-queries";
+
+/* readability: ensure text in skills section is not below 16px */
+:host p,
+:host li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* prevent decorative/background visuals from bleeding out of skills section */
+.skillsSection,
+.skillsLearning {
+  position: relative;
+  overflow: hidden;
+}
