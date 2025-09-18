@@ -137,7 +137,7 @@ import { FooterComponent } from '../footer/footer.component';
     </div>
     <app-footer></app-footer>
   `,
-  styleUrl: './privacypolicy.component.scss',
+  styleUrls: ['./navbar.component.scss'],
 })
 export class PrivacyPolicyComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
