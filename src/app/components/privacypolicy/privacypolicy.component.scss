@@ -191,4 +191,25 @@
   }
 }
 
+/* Minimal layout wrapper for legal pages */
+.privacy-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Clean, readable heading and paragraph rhythm */
+.privacy-policy {
+  text-align: left; /* keep content readable */
+
+  h1 { margin: 24px 0 12px; }
+  h2 { margin: 24px 0 12px; }
+
+  p + p { margin-top: 10px; }
+}
+
+@media (max-width: 520px) {
+  .privacy-wrapper { padding: 0 16px; }
+}
+
 @import "./privacypolicy.component.media-queries";
