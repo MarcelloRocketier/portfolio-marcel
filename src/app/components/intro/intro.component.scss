@@ -199,4 +199,16 @@
   transition: opacity 0.3s ease;
 }
 
+
+/* Fade out profile picture and shapes when screen gets too narrow */
+@media (max-width: 1000px) {
+  .intro .left .profilePicture,
+  .intro .left .shapeOne,
+  .intro .left .shapeTwo,
+  .intro .left .shapeThree {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
 @import "./intro.component.media-queries";
