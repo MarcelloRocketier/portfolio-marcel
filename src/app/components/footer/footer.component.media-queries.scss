@@ -1,4 +1,4 @@
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .mainFooter {
     display: none;
   }
@@ -15,8 +15,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 182px;
-    gap: 25px;
+    padding: 1rem 0;
+    gap: 28px;
 
     .logo {
       width: 50px;
@@ -37,6 +37,9 @@
       display: flex;
       justify-content: center;
       flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 18px;
+      text-align: center;
       gap: 32px;
       margin: 0;
       a,
@@ -57,17 +60,18 @@
 @media (max-width: 500px) {
   .responsiveFooter {
     padding: 0;
-    gap: 20px;
+    gap: 24px;
 
     .logo {
     }
     .socials {
-      gap: 20px;
+      gap: 24px;
     }
     .responsiveNav {
       width: 100%;
       max-width: 350px;
-      gap: 10px;
+      gap: 20px;
+      row-gap: 20px;
       .privacy {
         font-size: 13px;
       }
