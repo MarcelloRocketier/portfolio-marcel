@@ -8,16 +8,16 @@
                 <p class="nameSmall">M. Reyes</p>
                 <p class="jobTitleSmall">{{ 'INTRO.JOBTITLE' | translate }}</p>
             </div>
-            <li><a href="#aboutMe-desktop" [ngClass]="{'active': activeLink === 'aboutMe'}"
+            <li><a [routerLink]="'/'" fragment="aboutMe-desktop" [ngClass]="{'active': activeLink === 'aboutMe'}"
                     (click)="setActive('aboutMe')">{{
                     'NAV.ABOUTME' | translate }}</a></li>
-            <li><a href="#skills-desktop" [ngClass]="{'active': activeLink === 'skills'}"
+            <li><a [routerLink]="'/'" fragment="skills-desktop" [ngClass]="{'active': activeLink === 'skills'}"
                     (click)="setActive('skills')">{{
                     'NAV.SKILLS' | translate }}</a></li>
-            <li><a href="#projects-desktop" [ngClass]="{'active': activeLink === 'projects'}"
+            <li><a [routerLink]="'/'" fragment="projects-desktop" [ngClass]="{'active': activeLink === 'projects'}"
                     (click)="setActive('projects')">{{
                     'NAV.PROJECTS' | translate }}</a></li>
-            <li><a href="#contact-desktop" [ngClass]="{'active': activeLink === 'contact'}"
+            <li><a [routerLink]="'/'" fragment="contact-desktop" [ngClass]="{'active': activeLink === 'contact'}"
                     (click)="setActive('contact')">{{
                     'NAV.CONTACT' | translate }}</a></li>
             <app-language-switcher></app-language-switcher>

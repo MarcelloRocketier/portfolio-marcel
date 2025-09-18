@@ -2,6 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { RevealDirective } from './directives/reveal.directive';
 
@@ -18,6 +19,7 @@ export function HttpLoaderFactory(http: HttpClient) { return new TranslateHttpLo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     HttpClientModule,
     RevealDirective,
     TranslateModule.forRoot({ loader: { provide: TranslateLoader, useFactory: HttpLoaderFactory, deps: [HttpClient] } }),
