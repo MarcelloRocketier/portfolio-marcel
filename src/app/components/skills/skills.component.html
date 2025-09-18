@@ -13,12 +13,14 @@
         <img class="shapeOneSkills" src="assets/img/otherSpecs/skillEllipseGrey.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async">
         <img class="shapeTwoSkills" src="assets/img/otherSpecs/skillEllipseGreyHell.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async">
       </div>
-      <p class="learningNow">{{ 'SKILLS.LEARNINGNOW' | translate }}</p>
+      <div class="learningTextCol">
+        <p class="learningNow">{{ 'SKILLS.LEARNINGNOW' | translate }}</p>
+        <p class="learningNext">{{ 'SKILLS.LEARNINGNEXT' | translate }}</p>
+      </div>
       <img class="responsiveShape" src="assets/img/otherSpecs/skillEllipseGrey.svg" alt="" aria-hidden="true" role="presentation" loading="lazy" decoding="async">
       <div class="learningIcons">
         <img *ngFor="let skill of learningSkills" [src]="skill.image" [alt]="skill.name" loading="lazy" decoding="async" />
       </div>
-      <p class="learningNext">{{ 'SKILLS.LEARNINGNEXT' | translate }}</p>
     </div>
     <div class="responsiveButtonContainer">
       <button type="button" (click)="scrollToContact()" class="responsiveButton" role="button" aria-label="Let's talk">{{ 'ABOUTME.LETSTALK' | translate }}</button>
