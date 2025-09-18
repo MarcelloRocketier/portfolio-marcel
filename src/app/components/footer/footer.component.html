@@ -1,10 +1,10 @@
 <footer>
   <section class="footerWrapper mainFooter">
     <nav class="legalLinks">
-      <a class="privacy" routerLink="/rechtliche-hinweise" routerLinkActive="active">
+      <a class="privacy" [routerLink]="'/rechtliche-hinweise'" fragment="rechtliche-hinweise" routerLinkActive="active">
         {{ 'FOOTER.PRIVACY' | translate }}
       </a>
-      <a class="privacy" routerLink="/impressum" routerLinkActive="active">
+      <a class="privacy" [routerLink]="'/rechtliche-hinweise'" fragment="impressum" routerLinkActive="active">
         Impressum
       </a>
       <p>{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
@@ -58,10 +58,10 @@
       </a>
     </div>
     <nav class="responsiveNav legalLinks">
-      <a class="privacy" routerLink="/rechtliche-hinweise" routerLinkActive="active">
+      <a class="privacy" [routerLink]="'/rechtliche-hinweise'" fragment="rechtliche-hinweise" routerLinkActive="active">
         {{ 'FOOTER.PRIVACY' | translate }}
       </a>
-      <a class="privacy" routerLink="/impressum" routerLinkActive="active">
+      <a class="privacy" [routerLink]="'/rechtliche-hinweise'" fragment="impressum" routerLinkActive="active">
         Impressum
       </a>
       <p class="copyright">{{ 'FOOTER.COPYRIGHT' | translate:{ year: year } }}</p>
