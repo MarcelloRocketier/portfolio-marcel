@@ -212,4 +212,10 @@
   .privacy-wrapper { padding: 0 16px; }
 }
 
+/* Ensure anchor targets are visible below sticky navbar */
+.privacy-policy h1,
+.privacy-policy h2 {
+  scroll-margin-top: 104px; /* matches sticky navbar height */
+}
+
 @import "./privacypolicy.component.media-queries";
