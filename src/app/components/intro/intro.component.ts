@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-intro',
@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
     TranslateModule,
     CommonModule,
     LanguageSwitcherComponent,
+    RouterModule,
   ],
   templateUrl: './intro.component.html',
   styleUrls: ['./intro.component.scss'],

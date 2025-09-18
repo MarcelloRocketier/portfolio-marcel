@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
@@ -11,6 +12,7 @@ import { LanguageSwitcherComponent } from '../language-switcher/language-switche
     CommonModule,
     TranslateModule,
     LanguageSwitcherComponent,
+    RouterModule,
   ],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
