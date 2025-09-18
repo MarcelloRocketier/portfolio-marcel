@@ -1,8 +1,10 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
 import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { FooterComponent } from '../footer/footer.component';
 
 @Component({
@@ -13,6 +15,7 @@ import { FooterComponent } from '../footer/footer.component';
     TranslateModule,
     LanguageSwitcherComponent,
     FooterComponent,
+    RouterModule,
   ],
   template: `
     <div class="privacyScrollWrapper">
@@ -20,12 +23,7 @@ import { FooterComponent } from '../footer/footer.component';
           <section>
             <ul class="nav-links">
               <div class="logoMain">
-                <a
-                  href="https://marcelreyeslangenhorst.de/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="logo"
-                >
+                <a class="logo" [routerLink]="'/'">
                   <img
                     src="./assets/img/logo/LogoIconBlack.svg"
                     alt="Marcel Reyes Logo"
@@ -141,17 +139,31 @@ import { FooterComponent } from '../footer/footer.component';
   `,
   styleUrl: './privacypolicy.component.scss',
 })
-export class PrivacyPolicyComponent implements OnInit, OnDestroy {
+export class PrivacyPolicyComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
     document.body.classList.add('privacy-mode');
   }
   ngOnDestroy(): void {
     document.body.classList.remove('privacy-mode');
   }
-  constructor(private router: Router) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
+
+  ngAfterViewInit(): void {
+    const scrollTo = (frag: string | null) => {
+      if (!frag) return;
+      const el = document.getElementById(frag);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    // Wait for the view to render, then handle current + future fragments
+    setTimeout(() => {
+      scrollTo(this.route.snapshot.fragment);
+      this.route.fragment.subscribe((f) => scrollTo(f));
+    });
+  }
 
   goBack() {
-    this.router.navigate(['https://marcel-reyes-langen.developerakademie.net/index.html']);
+    this.router.navigateByUrl('/');
   }
 
   activeLink: String = '';
