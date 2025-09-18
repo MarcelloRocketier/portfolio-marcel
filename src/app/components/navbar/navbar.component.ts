@@ -1,35 +1,24 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
 import { LanguageSwitcherComponent } from '../language-switcher/language-switcher.component';
-import { FooterComponent } from '../footer/footer.component';
 
 @Component({
-  selector: 'app-privacypolicy',
+  selector: 'app-navbar',
   standalone: true,
-  imports: [
-    CommonModule,
-    TranslateModule,
-    LanguageSwitcherComponent,
-    FooterComponent,
-    RouterModule,
-  ],
-  template: `
-    <div class="logoMain">
-      <a class="logo" [routerLink]="'/'">
-        <img src="assets/logo.svg" alt="Logo" />
-      </a>
-    </div>
-    <!-- rest of the template -->
-  `,
-  styleUrls: ['./privacypolicy.component.scss'],
+  imports: [CommonModule, RouterModule, TranslateModule, LanguageSwitcherComponent],
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss'],
 })
-export class PrivacypolicyComponent {
-  constructor(private router: Router) {}
+export class NavbarComponent {
+  activeLink: string = '';
 
-  goBack(): void {
-    this.router.navigateByUrl('/');
+  setActive(link: string) {
+    this.activeLink = link;
+  }
+
+  navigateHome() {
+    // reserved for potential future logic; navigation handled via [routerLink]
   }
 }
