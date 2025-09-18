@@ -45,25 +45,25 @@
         <div class="containerText">
             <div class="logoAndSocials">
                 <div class="logoMain">
-                    <a class="logo" (click)="$event.preventDefault(); navigateHome()">
+                    <a class="logo" [routerLink]="'/'">
                         <img class="logo" src="assets/img/logo/LogoIcon.svg" alt="Marcel Reyes Logo" loading="lazy" decoding="async" />
                     </a>
                     <p class="nameSmall">M. Reyes</p>
                     <p class="jobTitleSmall">Frontend Developer</p>
                 </div>
                 <div class="socials">
-                    <a href="mailto:marcelreyeslangenhorst@gmail.com.contact?subject=Kontakt%20über%20Portfolio&body=Hallo%20Marcel%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
+                    <a href="mailto:marcelreyeslangenhorst@gmail.com?subject=Kontakt%20%C3%BCber%20Portfolio&body=Hallo%20Marcel%2C%0D%0Aich%20habe%20dein%20Portfolio%20gesehen..."
                         (mouseenter)="isHoveredMail = true" (mouseleave)="isHoveredMail = false">
                         <img [src]="isHoveredMail ? 'assets/img/otherSpecs/mailHover.svg' : 'assets/img/otherSpecs/mail.svg'"
                             width="30" height="30" alt="Mail Logo" loading="lazy" decoding="async" />
                     </a>
-                    <a href="https://www.linkedin.com/in/marcel-reyes-langenhorst-56b3022a7/" target="_blank"
-                        rel="noopener noreferrer" (mouseenter)="isHoveredLinkedin = true"
+                    <a href="https://www.linkedin.com/in/marcel-reyes-langenhorst-56b3022a7/"
+                        (mouseenter)="isHoveredLinkedin = true"
                         (mouseleave)="isHoveredLinkedin = false">
                         <img [src]="isHoveredLinkedin ? 'assets/img/otherSpecs/linkedinHover.svg' : 'assets/img/otherSpecs/linkedin.svg'"
                             width="30" height="30" alt="LinkedIn Logo" loading="lazy" decoding="async" />
                     </a>
-                    <a href="https://github.com/MarcelloRocketier" target="_blank" rel="noopener noreferrer"
+                    <a href="https://github.com/MarcelloRocketier"
                         (mouseenter)="isHoveredGitHub = true" (mouseleave)="isHoveredGitHub = false">
                         <img [src]="isHoveredGitHub ? 'assets/img/otherSpecs/githubHover.svg' : 'assets/img/otherSpecs/github.svg'"
                             width="30" height="30" alt="GitHub Logo" loading="lazy" decoding="async" />
