@@ -27,6 +27,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 2rem;
+      justify-items: center;
     }
     .responsiveLearningNow {
       display: none;
@@ -69,6 +70,9 @@
   position: relative;
   margin-inline: auto;
   isolation: isolate;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   .responsiveShape {
     display: none;
   }
