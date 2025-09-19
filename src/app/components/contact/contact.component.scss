@@ -1,12 +1,15 @@
 .contactsSection {
-  padding: 80px 150px 0 150px;
+  padding-top: 80px;
+  padding-inline: clamp(16px, 5vw, 150px);
   background-color: rgb(38, 46, 52);
+  box-sizing: border-box;
 }
 
 .contactsWrapper {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .contactsTitleWrapper {
@@ -52,6 +55,8 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  padding-inline: clamp(12px, 4vw, 24px);
+  box-sizing: border-box;
 }
 
 .contentMiddle {
@@ -160,20 +165,22 @@
 
 .nameAndEmail {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .name {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-right: 20px;
+  margin-right: 0;
   font-family: Josefin Sans;
   font-weight: 400;
   font-size: 14px;
   line-height: 120%;
 }
 .nameInput {
-  width: 445px;
+  width: min(100%, 445px);
   height: 60px;
   padding: 0 20px;
   margin-bottom: 10px;
@@ -196,7 +203,7 @@
 }
 
 .emailInput {
-  width: 445px;
+  width: min(100%, 445px);
   height: 60px;
   padding: 0 20px;
   border-radius: 30px;
@@ -219,7 +226,7 @@
 }
 
 .messageInput {
-  width: 911px;
+  width: min(100%, 911px);
   height: 164px;
   padding: 20px 20px;
   border-radius: 30px;
@@ -235,13 +242,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .error {
   color: #e53935;
   min-height: 20px;
   font-size: 0.85rem;
-  margin-left: 35px;
+  margin-left: 0;
 }
 
 .privacyCheckbox {
@@ -303,7 +311,7 @@
     padding-right: 30px;
     padding-bottom: 13px;
     padding-left: 30px;
-    margin-bottom: 200px;
+    margin-bottom: clamp(40px, 10vh, 200px);
     font-family: Josefin Sans;
     font-weight: 400;
     font-size: 18px;
@@ -377,6 +385,12 @@ button,
 .customCheckbox,
 .sendButton {
   cursor: pointer;
+}
+
+.contactsSection *,
+.contactsSection *::before,
+.contactsSection *::after {
+  box-sizing: inherit;
 }
 
 @import "contact.component.media-queries";
