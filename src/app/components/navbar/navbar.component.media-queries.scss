@@ -4,11 +4,12 @@
   .navbar {
     
     section {
-      padding: 0 1rem;
+      padding-inline: clamp(12px, 4vw, 1rem);
+      box-sizing: border-box;
     }
 
     .nav-links {
-      gap: 100px;
+      gap: clamp(24px, 6vw, 100px);
 
       li a {
         font-size: 20px;
@@ -33,7 +34,7 @@
 @media (max-width: 1100px) {
   .navbar {
     .nav-links {
-      gap: 80px;
+      gap: clamp(20px, 6vw, 80px);
     }
   }
 }
@@ -41,7 +42,7 @@
 @media (max-width: 1030px) {
   .navbar {
     .nav-links {
-      gap: 70px;
+      gap: clamp(16px, 5vw, 70px);
     }
   }
 }
@@ -49,7 +50,7 @@
 @media (max-width: 950px) {
   .navbar {
     .nav-links {
-      gap: 50px;
+      gap: clamp(12px, 5vw, 50px);
     }
   }
 }
@@ -57,7 +58,7 @@
 @media (max-width: 850px) {
   .navbar {
     .nav-links {
-      gap: 30px;
+      gap: clamp(8px, 4vw, 30px);
     }
   }
 }
