@@ -5,7 +5,8 @@
 }
 @media (max-width: 1150px) {
   .projectTabs {
-    padding: 0;
+    padding-inline: clamp(16px, 4vw, 24px);
+    box-sizing: border-box;
   }
   .projectCard {
     padding: 2rem 4rem;
@@ -38,7 +39,8 @@
 
 @media (max-width: 1051px) {
   .projectTabs {
-    padding-left: 0px;
+    padding-inline: clamp(12px, 4vw, 20px);
+    box-sizing: border-box;
   }
 
   .projectCard {
@@ -77,6 +79,8 @@
   .projectCard {
     padding: 1rem 2rem;
     gap: 10px;
+    box-sizing: border-box;
+    padding-inline: clamp(12px, 4vw, 20px);
     .projectImage {
       width: 400px;
       height: 270px;
@@ -270,6 +274,7 @@
     padding-left: 0;
     width: 100%;
     padding-inline: clamp(12px, 4vw, 16px);
+    box-sizing: border-box;
   }
 }
 
@@ -302,4 +307,10 @@
       }
     }
   }
+}
+
+.projectsWrapper *,
+.projectsWrapper *::before,
+.projectsWrapper *::after {
+  box-sizing: inherit;
 }
