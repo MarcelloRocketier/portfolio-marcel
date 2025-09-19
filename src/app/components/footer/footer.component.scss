@@ -1,14 +1,14 @@
 :host {
   display: block;
   background-color: rgb(137, 188, 255);;
-  padding: 0 20px;
+  padding-inline: clamp(16px, 5vw, 20px);
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
 }
 
-/* prevent invisible text in WebKit within footer scope */
 * {
   -webkit-text-fill-color: currentColor;
 }
@@ -16,7 +16,8 @@
 .footerWrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding-inline: clamp(16px, 5vw, 2rem);
+  box-sizing: border-box;
   background-color: rgb(137, 188, 255);;
 }
 
@@ -27,6 +28,7 @@
   align-items: center;
   height: 214px;
   padding: 2rem;
+  box-sizing: border-box;
   text-align: center;
   font-size: 0.9rem;
   color: rgba(38, 46, 52, 1);
@@ -95,5 +97,11 @@
 
 .responsiveFooter{
   display: none;
+}
+
+.mainFooter *,
+.mainFooter *::before,
+.mainFooter *::after {
+  box-sizing: inherit;
 }
 @import "footer.component.media-queries.scss";
