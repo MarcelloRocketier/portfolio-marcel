@@ -157,4 +157,13 @@
       padding-inline: 8px;
     }
   }
+  .contactInfo a,
+  .contactInfo span {
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding-inline: 12px;
+  }
 }
