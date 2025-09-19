@@ -6,7 +6,8 @@
 
 @media (max-width: 950px) {
   .contactsSection {
-    padding: 80px 40px 0 40px;
+    padding-top: 80px;
+    padding-inline: clamp(16px, 5vw, 40px);
   }
 
   .contactForm {
@@ -42,7 +43,8 @@
 
 @media (max-width: 850px) {
   .contactsSection {
-    padding: 80px 0 0 0;
+    padding-top: 80px;
+    padding-inline: clamp(12px, 5vw, 24px);
   }
   .contactsTitleWrapper {
     margin-bottom: 0;
@@ -87,6 +89,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    padding-inline: clamp(12px, 4vw, 20px);
+    box-sizing: border-box;
     .contactDescriptionContainer {
       display: flex;
       flex-direction: column-reverse;
@@ -148,6 +152,9 @@
   .contactsTitleWrapper {
     .contactsTitle {
       font-size: 40px;
+      line-height: 1.3;
+      text-align: center;
+      padding-inline: 8px;
     }
   }
 }
