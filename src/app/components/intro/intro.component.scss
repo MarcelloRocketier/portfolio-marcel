@@ -4,6 +4,7 @@
   width: 100%;
   height: calc(100vh - 104px);
   background-color: rgb(38, 46, 52);
+  box-sizing: border-box;
 }
 
 .intro {
@@ -14,6 +15,7 @@
   margin: 0 auto;
   color: white;
   padding-inline: clamp(16px, 4vw, 50px);
+  box-sizing: border-box;
 
   .responsioveHeader {
     display: none;
@@ -101,6 +103,7 @@
 
     .containerText {
       margin-top: 0;
+      padding-inline: clamp(12px, 4vw, 16px);
 
       .logoAndSocials {
         display: flex;
@@ -198,8 +201,6 @@
   transition: opacity 0.3s ease;
 }
 
-
-/* Fade out profile picture and shapes when screen gets too narrow */
 @media (max-width: 1000px) {
   .intro .left .profilePicture,
   .intro .left .shapeOne,
@@ -208,6 +209,12 @@
     opacity: 0;
     pointer-events: none;
   }
+}
+
+.intro *,
+.intro *::before,
+.intro *::after {
+  box-sizing: inherit;
 }
 
 @import "./intro.component.media-queries";
