@@ -183,7 +183,8 @@
 
         .shapeThree {
           display: block;
-          width: 350px;
+          width: clamp(240px, 70vw, 350px);
+          max-width: 90vw;
           height: auto;
         }
       }
@@ -195,6 +196,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: min(60vw, 450px);
+        max-width: 80vw;
         height: auto;
         object-fit: cover;
         border-radius: 50%;
@@ -226,6 +228,8 @@
         margin-top: 2rem;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
       }
     }
   }
@@ -236,6 +240,8 @@
     .mobileMenuOverlay {
       transform: scale(1.2, 1.2);
       background-size: contain;
+      width: min(313px, 90vw);
+      max-width: 90vw;
       padding: 0;
     }
 

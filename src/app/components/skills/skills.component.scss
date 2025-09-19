@@ -5,6 +5,7 @@
   justify-content: center;
   padding: 20px;
   padding-top: 80px;
+  padding-inline: clamp(16px, 4vw, 32px);
   background-color: rgb(38, 46, 52);
 
   .skillsTitle {
@@ -19,7 +20,8 @@
 
   .skillsSorting {
     display: flex;
-    gap: 100px;
+    gap: clamp(24px, 6vw, 100px);
+    flex-wrap: wrap;
 
     .skillsContainer {
       display: grid;
@@ -65,15 +67,14 @@
   max-width: 350px;
   text-align: center;
   position: relative;
+  margin-inline: auto;
+  isolation: isolate;
   .responsiveShape {
     display: none;
   }
   .shapeWrapperSkills {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    inset: 0;
     overflow: visible;
     z-index: 0;
     pointer-events: none;
@@ -159,16 +160,13 @@
 }
 @import "./skills.component.media-queries";
 
-/* readability: ensure text in skills section is not below 16px */
 :host p,
 :host li {
   font-size: 16px;
   line-height: 1.5;
 }
 
-/* prevent decorative/background visuals from bleeding out of skills section */
 .skillsSection,
 .skillsLearning {
   position: relative;
-  overflow: hidden;
 }

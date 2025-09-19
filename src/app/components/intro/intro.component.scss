@@ -13,8 +13,7 @@
   width: 100%;
   margin: 0 auto;
   color: white;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-inline: clamp(16px, 4vw, 50px);
 
   .responsioveHeader {
     display: none;
@@ -26,7 +25,7 @@
     max-width: 50%;
     max-height: 100%;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     --blob-size: clamp(360px, 38vw, 640px);
     --img-scale: 0.78;
     --center-x: 50%;
@@ -180,7 +179,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 250px;
+    margin-top: clamp(48px, 12vh, 250px);
   }
 
   .cta-button {
