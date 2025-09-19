@@ -68,6 +68,7 @@
 
   .intro {
     height: auto;
+    box-sizing: border-box;
     padding: 0 1rem;
     flex-direction: column;
     align-items: center;
@@ -116,6 +117,9 @@
       flex-direction: column;
       transform: scale(1.5, 1.5);
       animation: fadeIn 0.3s ease;
+      width: min(313px, 90vw);
+      max-width: 90vw;
+      box-sizing: border-box;
 
       .mobileNav {
         font-family: Josefin Sans;
@@ -210,8 +214,10 @@
       height: auto;
       width: 100%;
       z-index: 1;
+      padding-inline: clamp(12px, 4vw, 16px);
 
       .containerText {
+        padding-inline: clamp(12px, 4vw, 16px);
         text-align: center;
         margin-top: 1rem;
 
@@ -232,6 +238,12 @@
         gap: 12px;
       }
     }
+  }
+
+  .intro *,
+  .intro *::before,
+  .intro *::after {
+    box-sizing: inherit;
   }
 }
 
