@@ -1,5 +1,7 @@
 @media (max-width: 850px) {
   .skillsSection {
+    padding-inline: clamp(16px, 5vw, 24px);
+    box-sizing: border-box;
     overflow: visible;
     .skillsSorting {
       flex-direction: column;
@@ -50,6 +52,7 @@
 
   .skillsLearning {
     position: relative;
+    padding-left: clamp(16px, 5vw, 24px);
     padding-right: clamp(120px, 34vw, 160px);
     overflow: visible;
     max-width: 400px;
@@ -116,6 +119,7 @@
   }
 
   .responsiveButtonContainer {
+    padding-inline: clamp(16px, 5vw, 24px);
     display: flex;
     justify-content: center;
     .responsiveButton {
@@ -123,7 +127,8 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 120%;
-      width: 320px;
+      width: 100%;
+      max-width: 420px;
       height: 43px;
       border-radius: 30px;
       padding-top: 13px;
@@ -217,4 +222,3 @@
     justify-content: center;
   }
 }
-
