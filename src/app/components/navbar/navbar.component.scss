@@ -22,14 +22,15 @@
   section {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding-inline: clamp(16px, 5vw, 2rem);
+    box-sizing: border-box;
   }
 
   .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 120px;
+    gap: clamp(24px, 8vw, 120px);
 
     .logoMain {
       display: flex;
@@ -80,6 +81,8 @@
       text-decoration: none;
       padding-top: 2px;
       line-height: 1.2;
+      box-sizing: border-box;
+      padding-inline: 8px;
 
       &.active {
         color: #f8f5ec;
@@ -108,4 +111,11 @@
     }
   }
 }
+
+.navbar *,
+.navbar *::before,
+.navbar *::after {
+  box-sizing: inherit;
+}
+
 @import "./navbar.component.media-queries";
