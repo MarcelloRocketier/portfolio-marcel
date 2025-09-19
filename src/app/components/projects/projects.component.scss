@@ -8,7 +8,8 @@
 .projectsWrapper {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding-inline: clamp(16px, 5vw, 2rem);
+  box-sizing: border-box;
 }
 
 .projectsTitle {
@@ -24,7 +25,8 @@
 .projectTabs {
   display: flex;
   gap: 1rem;
-  padding-left: 90px;
+  padding-inline: clamp(16px, 5vw, 90px);
+  box-sizing: border-box;
 
   button {
     font-family: Josefin Sans;
@@ -87,6 +89,7 @@
   flex-direction: row;
   background: rgba(137, 188, 217, 0.07);
   padding: clamp(1.5rem, 4vw, 3rem);
+  box-sizing: border-box;
   gap: 3rem;
   align-items: flex-start;
   text-align: left;
@@ -132,7 +135,7 @@
   }
 
   .projectImage {
-    width: 453px;
+    width: min(100%, 453px);
     height: auto;
     border-radius: 8px;
     margin-bottom: 1.5rem;
@@ -243,4 +246,11 @@
     padding: 0 1rem;
   }
 }
+
+.projectsSection *,
+.projectsSection *::before,
+.projectsSection *::after {
+  box-sizing: inherit;
+}
+
 @import "projects.component.media-queries.scss";
